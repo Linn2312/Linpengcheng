@@ -1,0 +1,31 @@
+#服务注册地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/,http://localhost:9100/eureka/
+#api网关端口号
+server:
+  port: 81
+#网关别名
+spring:
+  application:
+    name: service-zuul
+zuul:
+  routes:
+    #web工程网关配置
+    api-a:
+      path: /mobile-web/**  #访问只要是/mobile-web/ 开头的直接转发到mobile-web服务
+      service-id: mobile-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
+  #此处解决后端服务重定向导致用户浏览的 host 变成 后端服务的 host 问题
+  add-host-header: true
+  host:
+    connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000   #socket超时
+#设置ribbon的超时时间小于zuul的超时时间
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

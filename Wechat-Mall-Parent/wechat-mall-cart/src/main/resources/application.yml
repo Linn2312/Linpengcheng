@@ -1,0 +1,36 @@
+##购物车服务的端口号
+server:
+  port: 8003
+##服务别名---服务注册到注册中心的名称
+spring:
+  application:
+    name: cart-server
+  ##配置redis连接信息
+  redis:
+    host: 127.0.0.1
+    port: 6381
+    jedis:
+      pool:
+        max-active: 200 # 连接池最大连接数(使用负值表示没有限制)
+        max-wait: -1 # 连接池最大阻塞等待时间(使用负值表示没有限制)
+        max-idle: 10 # 连接池中的最大空闲连接
+        min-idle: 1 # 连接池中的最小空闲连接
+#    cluster:
+#      nodes: 127.0.0.1:6380,127.0.0.1:6381,127.0.0.1:6382
+    timeout: 10000
+  ##数据库连接信息
+  datasource:
+    name: wechat-shop-cart
+    url: jdbc:mysql://127.0.0.1:3307/wechat-shop-cart?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      ##当前会员服务注册到eureka服务的地址
+      defaultZone: http://localhost:8100/eureka/,http://localhost:9100/eureka/
+    ##需要将服务注册到注册中心
+    register-with-eureka: true
+    ##需要检索服务
+    fetch-registry: true

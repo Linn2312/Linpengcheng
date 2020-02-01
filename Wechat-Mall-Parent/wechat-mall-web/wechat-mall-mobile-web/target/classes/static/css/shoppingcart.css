@@ -1,0 +1,45 @@
+body,html{margin:0;padding:0;height:100%}
+body{min-width:320px;margin:0;padding:0;font-family:"microsoft yahei",Verdana,Arial,Helvetica,sans-serif;font-size:1em}
+a{text-decoration:none}
+img{max-width:100%;vertical-align:middle}
+*{margin:0;padding:0}
+div{margin:0;padding:0}
+li,ul{list-style:none}
+em{font-style:normal}
+.body{width:100%;max-width:800px;margin:0 auto;padding-bottom:3.2rem;box-sizing:border-box}
+.shop{width:100%;height:2.3rem;border-bottom:1px solid #dcdcdc;line-height:2.3rem;padding-left:2rem;box-sizing:border-box}
+.shop i{display:inline-block;width:1.3rem;height:1.2rem;vertical-align:sub;margin-right:5px}
+.product{width:100%;padding-bottom:3.05rem}
+.product .product-box{width:100%;height:5.8rem;position:relative}
+.product-box .product-ckb{width:3rem;height:100%;display:inline-block;float:left;text-align:center;line-height:5.9rem;z-index:99;position:absolute}
+.product-ckb em{width:1.1rem;height:1.1rem;border-radius:50%;border:1px solid #B8B4B4;display:inline-block;cursor:pointer}
+.product-ckb .product-xz{background:url(../images/gouico.png) no-repeat 0 0;background-size:1.1rem;border:0;display:inline-block}
+.product-sx{float:left;height:5.8rem;padding:.6rem 0;border-bottom:1px solid #e1e1e1;padding-left:3rem;display:inline-block;width:100%;box-sizing:border-box;position:absolute;top:0;left:0}
+.product-sx .product-img{width:4.5rem;height:4.5rem;display:inline-block;float:left}
+.product-sx .product-name{font-size:.9em;color:#000;max-width:70%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;padding-left:10px}
+.product-sx .product-price{font-size:1rem;color:#e46b7e;margin:18px 0 0 14px;display:inline-block;float:left}
+.product-amount{position:absolute;right:15px;bottom:10px}
+.product_gw{border:1px solid #dbdbdb;width:110px;line-height:25px;overflow:hidden;font-size:.6rem}
+.product_gw em{display:block;height:25px;width:35px;float:left;color:#7A7979;border-right:1px solid #dbdbdb;text-align:center;cursor:pointer}
+.product_gw .product-num{display:block;float:left;text-align:center;width:38px;font-style:normal;font-size:12px;line-height:25px;border:0;pointer-events:none}
+.product_gw em.product-add{float:right;border-right:0;border-left:1px solid #dbdbdb}
+.product-del{width:1.15rem;display:inline-block;position:absolute;right:5px;top:8px;cursor:pointer}
+.product-js{width:100%;height:3rem;display:inline-block;position:fixed;bottom:0;border-top:1px solid #bfbfbf;line-height:3rem;max-width:640px;background:#fff;z-index:99}
+.product-al{display:inline-block;height:3rem;width:7.5rem}
+.product-js .product-all{width:3rem;height:100%;display:inline-block;float:left;text-align:center;line-height:3.5rem}
+.product-js .product-all em{width:1.1rem;height:1.1rem;border-radius:50%;border:1px solid #B8B4B4;display:inline-block;cursor:pointer}
+.product-js .product-all .product-all-on{background:url(../images/gouico.png) no-repeat 0 0;background-size:1.1rem;border:0;display:inline-block}
+.all-xz{cursor:pointer}
+.product-all-qx{color:#797979}
+.all-sl{color:#797979;display:inline-block;margin-left:8px}
+.product-all-sl{position:relative;top:1px}
+.all-product{text-align:right;float:right}
+.all-product .all-product-a{font-size:1.1rem;color:#f41638;font-weight:bolder;display:inline-block;margin-right:10px}
+.product-sett{float:right;width:6.5rem;text-align:center;color:#fff;background:#ed535f}
+.product-sett-a{background:#b2b2b2;pointer-events:none}
+.kon-cat{display:none}
+.catkon{position:absolute;top:0;left:0;width:100%;height:100%;padding-bottom:3.2rem;box-sizing:border-box;text-align:center;background:#f4f4f4;display:table;z-index:100}
+.kon-box{text-align:center;display:table-cell;vertical-align:middle;cursor:pointer}
+.kon-hz{width:50%;margin:0 auto}
+.kon-box .kon-wz{display:block;font-size:1rem;color:#aaa;margin:20px 0}
+.kon-box .kon-lj{display:inline-block;width:100%;height:2rem;line-height:2rem;background:#383838;color:#fff;margin-top:10px}

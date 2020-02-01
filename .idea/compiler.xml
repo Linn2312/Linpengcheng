@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wechat-mall-cart" />
+        <module name="wechat-mall-cart-api" />
+        <module name="wechat-mall-commodity" />
+        <module name="wechat-mall-commodity-api" />
+        <module name="wechat-mall-common" />
+        <module name="wechat-mall-eureka-8100" />
+        <module name="wechat-mall-eureka-8200" />
+        <module name="wechat-mall-member" />
+        <module name="wechat-mall-member-api" />
+        <module name="wechat-mall-message" />
+        <module name="wechat-mall-mobile-web" />
+        <module name="wechat-mall-order" />
+        <module name="wechat-mall-order-api" />
+        <module name="wechat-mall-pay" />
+        <module name="wechat-mall-pay-api" />
+        <module name="wechat-mall-zuul-81" />
+        <module name="wechat-mall-zuul-82" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wechat-mall-api" target="1.8" />
+      <module name="wechat-mall-cart" target="1.8" />
+      <module name="wechat-mall-cart-api" target="1.8" />
+      <module name="wechat-mall-cart-web" target="1.8" />
+      <module name="wechat-mall-commodity" target="1.8" />
+      <module name="wechat-mall-commodity-api" target="1.8" />
+      <module name="wechat-mall-common" target="1.8" />
+      <module name="wechat-mall-eureka-8100" target="1.8" />
+      <module name="wechat-mall-eureka-8200" target="1.8" />
+      <module name="wechat-mall-eureka-9100" target="1.8" />
+      <module name="wechat-mall-member" target="1.8" />
+      <module name="wechat-mall-member-api" target="1.8" />
+      <module name="wechat-mall-message" target="1.8" />
+      <module name="wechat-mall-mobile-web" target="1.8" />
+      <module name="wechat-mall-order" target="1.8" />
+      <module name="wechat-mall-order-api" target="1.8" />
+      <module name="Wechat-Mall-Parent" target="1.8" />
+      <module name="wechat-mall-pay" target="1.8" />
+      <module name="wechat-mall-pay-api" target="1.8" />
+      <module name="wechat-mall-pay-web" target="1.8" />
+      <module name="wechat-mall-web" target="1.8" />
+      <module name="wechat-mall-zuul-81" target="1.8" />
+      <module name="wechat-mall-zuul-82" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="wechat-mall-api" options="-parameters" />
+      <module name="wechat-mall-cart" options="-parameters" />
+      <module name="wechat-mall-cart-api" options="-parameters" />
+      <module name="wechat-mall-cart-web" options="-parameters" />
+      <module name="wechat-mall-commodity" options="-parameters" />
+      <module name="wechat-mall-commodity-api" options="-parameters" />
+      <module name="wechat-mall-common" options="-parameters" />
+      <module name="wechat-mall-eureka-8100" options="-parameters" />
+      <module name="wechat-mall-eureka-8200" options="-parameters" />
+      <module name="wechat-mall-eureka-9100" options="-parameters" />
+      <module name="wechat-mall-member" options="-parameters" />
+      <module name="wechat-mall-member-api" options="-parameters" />
+      <module name="wechat-mall-message" options="-parameters" />
+      <module name="wechat-mall-mobile-web" options="-parameters" />
+      <module name="wechat-mall-order" options="-parameters" />
+      <module name="wechat-mall-order-api" options="-parameters" />
+      <module name="wechat-mall-pay" options="-parameters" />
+      <module name="wechat-mall-pay-api" options="-parameters" />
+      <module name="wechat-mall-pay-web" options="-parameters" />
+      <module name="wechat-mall-web" options="-parameters" />
+      <module name="wechat-mall-zuul-81" options="-parameters" />
+      <module name="wechat-mall-zuul-82" options="-parameters" />
+    </option>
+  </component>
+</project>

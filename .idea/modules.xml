@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/Wechat-Mall-Parent.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/Wechat-Mall-Parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-api.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-cart/wechat-mall-cart.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-cart/wechat-mall-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-cart-api/wechat-mall-cart-api.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-cart-api/wechat-mall-cart-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/wechat-mall-commodity.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/wechat-mall-commodity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/wechat-mall-commodity-api.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/wechat-mall-commodity-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/wechat-mall-common.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/wechat-mall-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/wechat-mall-eureka-8100.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/wechat-mall-eureka-8100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/wechat-mall-eureka-8200.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/wechat-mall-eureka-8200.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/wechat-mall-member.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/wechat-mall-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/wechat-mall-member-api.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/wechat-mall-member-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/wechat-mall-message.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/wechat-mall-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/wechat-mall-mobile-web.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/wechat-mall-mobile-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/wechat-mall-order.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/wechat-mall-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/wechat-mall-order-api.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/wechat-mall-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/wechat-mall-pay.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/wechat-mall-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/wechat-mall-pay-api.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/wechat-mall-pay-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-web.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/wechat-mall-zuul-81.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/wechat-mall-zuul-81.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/wechat-mall-zuul-82.iml" filepath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/wechat-mall-zuul-82.iml" />
+    </modules>
+  </component>
+</project>

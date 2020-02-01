@@ -1,0 +1,29 @@
+#header_search_suggest{
+    position: absolute;
+    width: calc(100% - 10px);
+    left: 4px;
+    border: solid 1px #ccc;
+    background-color: white;
+    text-align: left;
+    z-index: 101;
+    display: none;
+}
+#header_search_suggest li{
+    font-size: 14px;
+    border-bottom: 1px solid #eeeeee;
+}
+#header_search_suggest li a{
+    padding:0.5em 1em;
+    color:#333333;
+    display: block;
+    text-decoration: none;
+}
+#header_search_suggest li a:hover{
+    background-color: #EDF0F2;
+    color:#2F7EC4;
+}
+#header_search_suggest li a em{
+    font-style: italic;
+    color:#999;
+    font-size:0.8em;
+}

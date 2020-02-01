@@ -1,0 +1,50 @@
+##会员服务的端口号
+server:
+  port: 8000
+##服务别名---服务注册到注册中心的名称
+spring:
+  application:
+    name: member-server
+  ##配置redis连接信息
+  redis:
+    jedis:
+      pool:
+        max-active: 200 # 连接池最大连接数(使用负值表示没有限制)
+        max-wait: -1 # 连接池最大阻塞等待时间(使用负值表示没有限制)
+        max-idle: 10 # 连接池中的最大空闲连接
+        min-idle: 1 # 连接池中的最小空闲连接
+    host: 127.0.0.1
+    port: 6380
+    timeout: 10000
+  #    cluster:
+  #      nodes: 127.0.0.1:6380,127.0.0.1:6381,127.0.0.1:6382
+  ##数据库连接信息
+  datasource:
+    name: wechat-shop-member
+    url: jdbc:mysql://127.0.0.1:3307/wechat-shop-member?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  ##activeMQ配置
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    in-memory: true
+  jms:
+    pub-sub-domain: false
+###自定义消息队列名称
+##注册用户时的消息队列
+wechat-shop-msg-register: register-email-Queue
+##找回密码时的消息队列
+wechat-shop-msg-findPwd: findPwd-Queue
+
+eureka:
+  client:
+    service-url:
+      ##当前会员服务注册到eureka服务的地址
+      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:9100/eureka/
+    ##需要将服务注册到注册中心
+    register-with-eureka: true
+    ##需要检索服务
+    fetch-registry: true

@@ -1,0 +1,29 @@
+##消息服务端口号
+server:
+  port: 8001
+##服务别名---服务注册到注册中心的名称
+spring:
+  application:
+    name: message-server
+  ##activeMQ配置
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    in-memory: true
+  jms:
+    pub-sub-domain: false
+  mail:
+    host: smtp.163.com
+    username: 17685748159@163.com  #发送者邮箱
+    password: 580231lpc   #邮箱的授权密码
+eureka:
+  client:
+    service-url:
+      ##当前消息服务注册到eureka服务的地址
+      defaultZone: http://localhost:8100/eureka/,http://localhost:9100/eureka/
+    ##需要将服务注册到注册中心
+    register-with-eureka: true
+    ##需要检索服务
+    fetch-registry: true
+
