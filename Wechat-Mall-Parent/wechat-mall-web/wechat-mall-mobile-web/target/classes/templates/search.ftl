@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="css/sm.css">
     <script src="js/zepto.js"></script>
     <script src="js/sm.js"></script>
+    <script type="text/javascript">
+        function search() {
+            var keyword = document.getElementById("keyword").value;
+            window.location.href = 'search?keyword=' + keyword;
+        }
+    </script>
 </head>
 <body>
 <!-- search start -->
@@ -22,10 +28,10 @@
     <div class="page page-current">
         <div class="bar bar-header-secondary">
             <div class="searchbar">
-                <a class="searchbar-cancel">取消</a>
+                <a class="searchbar-cancel" id="search" href="javascript:search()">搜索</a>
                 <div class="search-input">
                     <label class="icon icon-search" for="search"></label>
-                    <input type="search" id='search' placeholder='输入关键字...'/>
+                    <input type="search" id="keyword" placeholder="输入关键字..."/>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8100/eureka/,http://localhost:9100/eureka/
+      defaultZone: http://localhost:8100/eureka/,http://localhost:8200/eureka/
 #api网关端口号
 server:
   port: 81

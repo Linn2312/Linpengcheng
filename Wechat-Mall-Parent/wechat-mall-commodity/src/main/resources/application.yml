@@ -12,21 +12,15 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-  ##es服务器地址 超时时间
+  ##9300端口基于tcp协议连接es
   data:
     elasticsearch:
       cluster-nodes: 127.0.0.1:9300
-      repositories:
-        enabled: true
-      properties:
-        transport:
-          tcp:
-            connect_timeout: 120s
 eureka:
   client:
     service-url:
       ##当前商品服务注册到eureka服务的地址
-      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:9100/eureka/
+      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:8200/eureka/
     ##需要将服务注册到注册中心
     register-with-eureka: true
     ##需要检索服务

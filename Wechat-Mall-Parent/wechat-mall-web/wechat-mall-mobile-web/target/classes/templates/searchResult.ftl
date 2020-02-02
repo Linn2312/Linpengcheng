@@ -21,49 +21,33 @@
 <body>
 <!-- all content  -->
 <div class="wrapper" id="content">
-    <!-- list one start -->
+    <!-- list start -->
     <div class="list">
-        <#if dataMap?exists>
-            <#list dataMap?keys as key>
-                <div class="list-cell">
-                    <#list dataMap["${key}"] as u>
-                        <#if u_index % 2 != 1 >
-                            <div class="row">
-                        </#if>
+        <div class="list-cell">
+            <#if (searchList?exists)&&(searchList?size>0)>
+                <#list searchList as list>
+                    <div class="row">
                         <div class="cell">
 							<span class="imgurl">
-								<a href="itemDesc?id=${u.id}"><img src="${u.image}" alt=""></a>
+								<a href="itemDesc?id=${list.getId()}"><img src="${list.getImage()}" alt=""></a>
 							</span>
                             <span class="p">
-								<span>${u.title}</span>
+								<span>${list.getTitle()}</span>
 							</span>
                             <span class="p">
-								<span style="color: red">&yen;${u.price}</span>
+								<span style="color: red">&yen;${list.getPrice()}</span>
 							</span>
                         </div>
-                        <#if u_index % 2 != 1 >
-                            </div>
-                        </#if>
-                    </#list>
-                </div>
-            </#list>
-        </#if>
-        <!-- list one end -->
-
-        <!-- footer start -->
-        <div class="footer">
-            <div class="tip">
-                <a onclick="goTop()" class="goDesktop"><span>返回顶层</span></a>
-            </div>
+                    </div>
+                </#list>
+            <#else >
+                <span style="font-size: 34px">
+                        没有您要查找的商品
+                    </span>
+            </#if>
         </div>
-        <!-- footer end -->
-
-        <script type="text/javascript">
-            //返回顶部
-            function goTop() {
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
+        <!-- list end -->
     </div>
+</div>
 </body>
 </html>

@@ -48,5 +48,5 @@ public interface ItemService {
 	 * 搜索关键字
 	 */
 	@RequestMapping("/search")
-	Map<String,Object> search(@RequestParam("keywords")String keywords);
+	List<Item> search(@RequestParam("keywords")String keywords);
 }

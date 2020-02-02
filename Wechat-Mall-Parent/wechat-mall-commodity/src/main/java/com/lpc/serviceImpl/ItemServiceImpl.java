@@ -1,14 +1,17 @@
 package com.lpc.serviceImpl;
 
-import com.lpc.dao.ESDao;
 import com.lpc.dao.ItemDao;
+import com.lpc.dao.ItemRepository;
 import com.lpc.dao.ItemTypeDao;
 import com.lpc.responseConfig.BaseResponseService;
 import com.lpc.utils.ReflectionUtils;
 import commodity.entity.Item;
 import commodity.entity.ItemType;
 import commodity.service.api.ItemService;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +29,7 @@ public class ItemServiceImpl extends BaseResponseService implements ItemService 
 	@Autowired
 	private ItemTypeDao itemTypeDao;
 	@Autowired
-	private ESDao esDao;
+	private ItemRepository itemRepository;
 
 	@Override
 	public Map<String, Object> getItems() {
@@ -50,9 +53,14 @@ public class ItemServiceImpl extends BaseResponseService implements ItemService 
 	}
 
 	@Override
-	public Map<String, Object> search(@RequestParam("keywords")String keywords) {
-		List<Item> list = esDao.findByName(keywords);
-		return setResultSuccessData(list);
+	public List<Item> search(@RequestParam("keywords")String keywords) {
+		// 构建查询条件
+		NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+		// 添加基本分词查询 matchQuery
+		queryBuilder.withQuery(QueryBuilders.matchQuery("title", keywords));
+		// 搜索，获取结果
+		Page<Item> search = itemRepository.search(queryBuilder.build());
+		return search.getContent();
 	}
 
 	@Override

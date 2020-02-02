@@ -46,7 +46,7 @@ public class ItemHystrixFallBack extends BaseResponseService implements ItemFeig
     }
 
     @Override
-    public Map<String, Object> search(String keywords) {
-        return setResultError("系统正忙，请稍后再试");
+    public List<Item> search(String keywords) {
+        return null;
     }
 }

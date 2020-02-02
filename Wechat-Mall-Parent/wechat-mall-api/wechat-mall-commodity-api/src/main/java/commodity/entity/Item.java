@@ -1,9 +1,9 @@
 package commodity.entity;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.sql.Timestamp;
 
@@ -14,17 +14,15 @@ import java.sql.Timestamp;
  */
 
 @Data
-@Document(indexName = "",type = "")
-public class Item{
+@Document(indexName = "item",type = "doc")
+public class Item implements Serializable {
 	/**
 	 * 主键
 	 */
-	@Id
 	private Long id;
 	/**
 	 * 标题
 	 */
-
 	private String title;
 	/**
 	 * 商品价格
