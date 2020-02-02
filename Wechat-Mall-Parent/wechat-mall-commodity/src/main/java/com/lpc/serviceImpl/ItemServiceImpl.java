@@ -56,8 +56,8 @@ public class ItemServiceImpl extends BaseResponseService implements ItemService 
 	public List<Item> search(@RequestParam("keywords")String keywords) {
 		// 构建查询条件
 		NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
-		// 添加基本分词查询 matchQuery
-		queryBuilder.withQuery(QueryBuilders.matchQuery("title", keywords));
+		// 添加基本分词查询 matchQuery商品卖点
+		queryBuilder.withQuery(QueryBuilders.matchQuery("sellpoint", keywords));
 		// 搜索，获取结果
 		Page<Item> search = itemRepository.search(queryBuilder.build());
 		return search.getContent();

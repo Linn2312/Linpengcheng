@@ -25,6 +25,10 @@ public class Item implements Serializable {
 	 */
 	private String title;
 	/**
+	 * 商品卖点
+	 */
+	private String sellpoint;
+	/**
 	 * 商品价格
 	 */
 	private BigInteger price;
