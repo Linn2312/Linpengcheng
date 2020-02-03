@@ -49,14 +49,6 @@ public class IndexController extends BaseController {
 	}
 
 	/**
-	 * 跳转到搜索页面
-	 */
-	@RequestMapping("/toSearch")
-	public String toSearch(){
-		return SEARCH;
-	}
-
-	/**
 	 * 按关键字搜索
 	 */
 	@RequestMapping("/search")

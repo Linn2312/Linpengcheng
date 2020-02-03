@@ -258,6 +258,8 @@
 
 .wrapper .card{
 	margin-bottom: .5em;
+	margin-top: 3.7em;
+	margin-left: -.2em;
 }
 .wrapper .card .col2{
 	background-color: #fff;
@@ -383,7 +385,7 @@
 	display: block;
 	word-wrap: break-word;
 	padding: 0 4em 0 6.5em;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 /* list one end */
 

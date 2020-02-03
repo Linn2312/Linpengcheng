@@ -17,6 +17,10 @@
 	<!-- 加载前动画样式 -->
 	<link rel="stylesheet" href="css/loading.css">
 	<link rel="stylesheet" href="css/index.css">
+	<!-- 搜索栏样式 -->
+	<link rel="stylesheet" href="css/search.css">
+	<script src="js/zepto.js"></script>
+	<script src="js/sm.js"></script>
 	<!-- 移动端滑动&轮播框架 -->
 	<script src="js/ready.js"></script>
 	<script src="js/swipe.js"></script>
@@ -31,6 +35,15 @@
 				document.getElementById("loading").style.display = "none";
 			}
 		});
+		function search() {
+			var keyword = document.getElementById("keyword").value;
+			if (keyword!==null&&keyword!==''&&keyword!==undefined){
+				window.location.href = 'search?keyword=' + keyword;
+			}
+			else {
+				alert("请您输入关键词");
+			}
+		}
 	</script>
 </head>
 <body>
@@ -57,6 +70,7 @@
 		</div>
 	</div>
 </div>
+
 <!-- all content  -->
 <div class="wrapper" id="content">
 	<!-- header start -->
@@ -80,6 +94,18 @@
 		</div>
 	</div>
 	<!-- header end -->
+
+	<!-- search start -->
+	<div class="bar">
+		<div class="searchbar">
+			<a type="button" class="searchbar-cancel" id="search" href="javascript:search()">搜索</a>
+			<div class="search-input">
+				<label class="icon icon-search" for="search"></label>
+				<input type="search" id="keyword" placeholder="输入关键字..."/>
+			</div>
+		</div>
+	</div>
+	<!-- search end -->
 
 	<!-- banner start -->
 	<div id="slider" class="slider card card-nomb" style="visibility:visible">
