@@ -52,10 +52,9 @@
 					<div class="product_swipe">
 						<!-- 单品介绍图片 -->
 						<div class="swipe" id="slider" style="visibility: visible">
-							<div class="swipe-wrap" style="width: 2160px;">
-								<div data-index="0"
-									style="width: 720px; left: -170px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-									<img src="${item['image']}" alt="">
+							<div class="swipe-wrap" style="width: 100%;">
+								<div style="width: 30em;height: 25em;left: 35px;padding-top: 10px">
+									<img style="height: 220px;width: 220px" src="${item['image']}" alt="">
 								</div>
 							</div>
 						</div>

@@ -377,16 +377,14 @@
 	text-overflow: ellipsis;
 	color: #333;
 }
-.wrapper .list .list-cell .p span {
-	font-size: 1.3em;
-	line-height: 1.3;
+.wrapper .list .list-cell .sellpoint{
+	word-break: normal;
+	width: 230px;
+	display: block;
+	word-wrap: break-word;
+	padding: 0 4em 0 6.5em;
+	font-size: 1.1em;
 }
-.wrapper .list .list-cell .p del {
-	font-size: 1.3em;
-	line-height: 1.3;
-	color: #999;
-}
-
 /* list one end */
 
 /* more start */

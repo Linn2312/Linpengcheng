@@ -31,11 +31,11 @@
 							<span class="imgurl">
 								<a href="itemDesc?id=${list.getId()}"><img src="${list.getImage()}" alt=""></a>
 							</span>
-                            <span class="p">
-								<span>${list.getTitle()}</span>
+                            <span class="sellpoint">
+								${list.getSellpoint()}
 							</span>
                             <span class="p">
-								<span style="color: red">&yen;${list.getPrice()}</span>
+								<span style="color: red;font-size: 18px">&yen;${list.getPrice()}</span>
 							</span>
                         </div>
                     </div>

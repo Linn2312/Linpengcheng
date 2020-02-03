@@ -162,11 +162,11 @@
 							<span class="imgurl">
 								<a href="itemDesc?id=${u.id}"><img src="${u.image}" alt=""></a>
 							</span>
-							<span class="p">
-								<span>${u.title}</span>
+							<span class="sellpoint">
+								${u.sellpoint}
 							</span>
 							<span class="p">
-								<span style="color: red">&yen;${u.price}</span>
+								<span style="color: red;font-size: 18px">&yen;${u.price}</span>
 							</span>
 						</div>
 						<#if u_index % 2 != 1 >

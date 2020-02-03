@@ -40,7 +40,7 @@ public class ItemServiceImpl extends BaseResponseService implements ItemService 
 
 	@Override
 	public Map<String, Object> getAllItems() {
-		// 查询前两种类型,每查询出来一个就进数据库查询对应的全部商品信息，存入map
+		// 查询所有类型,每查询出来一个就进数据库查询对应的全部商品信息，存入map
 		List<ItemType> listItemType = itemTypeDao.getShowMoreItemsType();
 		return this.get(listItemType);
 	}
