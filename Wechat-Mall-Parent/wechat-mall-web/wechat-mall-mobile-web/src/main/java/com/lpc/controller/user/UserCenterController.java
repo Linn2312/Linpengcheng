@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author Lin
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class UserCenterController extends BaseController {
     private static final String USER_CENTER = "usercenter";
+    private static final String LOGIN = "login";
     private static final String ERROR = "error";
     @Autowired
     private OrderFeign orderFeign;
@@ -49,5 +51,11 @@ public class UserCenterController extends BaseController {
             request.setAttribute("orderSize",orderSize);
         }
         return USER_CENTER;
+    }
+
+    @RequestMapping("/exit")
+    public String exit(HttpServletResponse response){
+        CookieUtil.removeCookie(response,Constants.USER_TOKEN);
+        return LOGIN;
     }
 }

@@ -70,9 +70,9 @@
 			<ul>
 				<li><a href="index" class="nav-controller"><div class="fb-home"></div>首页</a></li>
 				<#if username?exists>
-					<li><a href="selectUserAllOrder" class="nav-controller"><div class="fb-list"></div>我的订单</a></li>
+					<li><a href="exit" class="nav-controller"><div class="fb-list"></div>退出登录</a></li>
 				<#else >
-					<li><a href="javascript:void(0)" onclick="gogo()" class="nav-controller"><div class="fb-list"></div>我的订单</a></li>
+					<li><a href="javascript:void(0)" onclick="gogo()" class="nav-controller"><div class="fb-list"></div>退出登录</a></li>
 				</#if>
 			</ul>
 		</nav>
