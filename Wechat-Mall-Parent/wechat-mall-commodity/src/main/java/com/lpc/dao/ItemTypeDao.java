@@ -8,7 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface ItemTypeDao {
-	@Select("select * from tb_item_type limit 0,2")
+	@Select("select * from tb_item_type limit 0,3")
     List<ItemType> getTwoItemsType();
 
     @Select("select * from tb_item_type")
