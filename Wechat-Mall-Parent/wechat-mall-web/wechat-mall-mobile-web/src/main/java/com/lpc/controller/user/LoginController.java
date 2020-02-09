@@ -50,6 +50,7 @@ public class LoginController extends BaseController {
     @RequestMapping("/login")
     public String login(mb_user mb_user, HttpServletRequest request,
                         HttpServletResponse response){
+        //关联已有账户 需要封装openID
         String source = (String) request.getSession().getAttribute("source");
         if (!StringUtils.isEmpty(source) && source.equals("qq")){
             String openID = (String) request.getSession().getAttribute(Constants.USER_OPENID);
@@ -66,7 +67,7 @@ public class LoginController extends BaseController {
         CookieUtil.addCookie(response, Constants.USER_TOKEN,token, Constants.WEB_USER_COOKIE_MAX_AGE);
         //清除session中的openID,防止重复使用
         if (request.getSession().getAttribute(Constants.USER_OPENID) != null){
-            request.getSession().invalidate();
+            request.getSession().removeAttribute(Constants.USER_OPENID);
         }
         return "redirect:" + INDEX;
     }
@@ -99,16 +100,13 @@ public class LoginController extends BaseController {
         AccessToken accessTokenObj = (new Oauth()).getAccessTokenByRequest(request);
         String accessToken = accessTokenObj.getAccessToken();
         if (StringUtils.isEmpty(accessToken)){
-            return super.setError(request,"QQ授权失败!",ERROR);
+            return super.setError(request,"获取accessToken为空，QQ授权失败!",ERROR);
         }
         OpenID openIDObj = new OpenID(accessToken);
         String openID = openIDObj.getUserOpenID();
         //把openID保存到session,便于qq登录关联用户信息
         request.getSession().setAttribute(Constants.USER_OPENID,openID);
         Map<String, Object> userByLoginOpenIDMap = userFeign.getUserByLoginOpenID(openID);
-        if (userByLoginOpenIDMap.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-            return super.setError(request,(String)userByLoginOpenIDMap.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
-        }
         Integer code = (Integer) userByLoginOpenIDMap.get(BaseResponseConstants.HTTP_RESP_CODE_NAME);
         //有关联则直接登录 存cookie
         if (code.equals(BaseResponseConstants.HTTP_RESP_CODE_200)){
@@ -116,7 +114,7 @@ public class LoginController extends BaseController {
             String token = (String) userByLoginOpenIDMap.get(BaseResponseConstants.HTTP_RESP_CODE_DATA);
             //存cookie
             CookieUtil.addCookie(response, Constants.USER_TOKEN,token, Constants.WEB_USER_COOKIE_MAX_AGE);
-            return INDEX;
+            return "redirect:" + INDEX;
         }
         //无关联则跳转到绑定页面
         return ASSOCIATEDACCOUNT;
@@ -139,6 +137,7 @@ public class LoginController extends BaseController {
         if (map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
             return super.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
         }
+        request.setAttribute("error","稍后几秒钟，链接将发往您的邮箱");
         return LOGIN;
     }
 
@@ -159,6 +158,7 @@ public class LoginController extends BaseController {
         if (!map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_200)){
             return super.setError(request,"手机号不存在",UPDATEPWD);
         }
+        request.setAttribute("error","修改成功，请重新登录");
         return LOGIN;
     }
 

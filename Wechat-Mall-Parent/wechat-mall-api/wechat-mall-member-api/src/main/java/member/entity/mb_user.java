@@ -3,6 +3,8 @@ package member.entity;
 import com.lpc.entity.BaseEntity;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Lin
  * @Date 2019/12/7
@@ -10,7 +12,7 @@ import lombok.Data;
  * 会员表
  */
 @Data
-public class mb_user extends BaseEntity {
+public class mb_user extends BaseEntity implements Serializable {
 
     private String username;
     private String password;

@@ -3,6 +3,8 @@ package member.entity;
 import com.lpc.entity.BaseEntity;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Lin
  * @Date 2020/1/26
@@ -10,7 +12,7 @@ import lombok.Data;
  * 用户地址表
  */
 @Data
-public class address extends BaseEntity {
+public class address extends BaseEntity implements Serializable {
     private Long userId;    //买家的id
     private String name;    //收货方姓名
     private String phone;   //收货方电话

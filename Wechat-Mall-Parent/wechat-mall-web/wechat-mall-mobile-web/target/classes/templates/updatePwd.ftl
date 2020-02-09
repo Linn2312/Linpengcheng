@@ -63,7 +63,7 @@
         <h2 class="nl-login-title lsrp-appname display-custom-hide" id="lsrp_appName"></h2>
 
         <div class="nl-phone-tip">
-            <div id="message_LOGIN_PHONETIP">输入注册商城时的手机号，便于您下一次修改密码</div>
+            <div id="message_LOGIN_PHONETIP">输入需要找回密码的手机号</div>
             <div id="select_country_code">帮助</div>
         </div>
 

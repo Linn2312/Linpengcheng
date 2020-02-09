@@ -3,11 +3,13 @@ package pay.entity;
 import com.lpc.entity.BaseEntity;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * 支付信息表
  */
 @Data
-public class PaymentInfo extends BaseEntity {
+public class PaymentInfo extends BaseEntity implements Serializable {
 
 	/**
 	 * 支付类型id

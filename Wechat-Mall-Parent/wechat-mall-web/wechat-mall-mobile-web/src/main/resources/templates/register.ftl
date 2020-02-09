@@ -73,7 +73,7 @@
             id="lsrp_appName"></h2>
 
         <div class="nl-phone-tip">
-            <div id="message_LOGIN_PHONETIP">目前暂支持中国大陆手机号(+86)，请务必填写正确</div>
+            <div id="message_LOGIN_PHONETIP">目前暂支持中国大陆手机号，请务必填写正确</div>
             <div id="select_country_code">帮助</div>
         </div>
 

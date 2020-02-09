@@ -3,6 +3,8 @@ package order.entity;
 import com.lpc.entity.BaseEntity;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Lin
  * @Date 2020/1/15
@@ -10,7 +12,7 @@ import lombok.Data;
  * 订单详情表
  */
 @Data
-public class OrderDetail extends BaseEntity {
+public class OrderDetail extends BaseEntity implements Serializable {
     /**
      * 订单id
      */

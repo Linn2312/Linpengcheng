@@ -3,6 +3,7 @@ package commodity.entity;
 import com.lpc.entity.BaseEntity;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Date;
  * 商品类型表
  */
 @Data
-public class ItemType extends BaseEntity {
+public class ItemType extends BaseEntity implements Serializable {
 	/**
 	 * 类目名称
 	 */

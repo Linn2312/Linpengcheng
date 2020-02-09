@@ -15,7 +15,6 @@
 	<!-- 自适应样式单 -->
 	<link rel="stylesheet" href="css/adaptive.css">
 	<!-- 加载前动画样式 -->
-	<link rel="stylesheet" href="css/loading.css">
 	<link rel="stylesheet" href="css/index.css">
 	<!-- 搜索栏样式 -->
 	<link rel="stylesheet" href="css/search.css">
@@ -25,16 +24,6 @@
 	<script src="js/ready.js"></script>
 	<script src="js/swipe.js"></script>
 	<script type="text/javascript">
-		/* loading ready */
-		document.ready(function() {
-			document.getElementById("loading").style.display = "visible";
-			onload=function () {
-				setTimeout(go,500);
-			};
-			function go() {
-				document.getElementById("loading").style.display = "none";
-			}
-		});
 		function search() {
 			var keyword = document.getElementById("keyword").value;
 			if (keyword!==null&&keyword!==''&&keyword!==undefined){
@@ -47,30 +36,6 @@
 	</script>
 </head>
 <body>
-<!-- loading -->
-<div id="loading" style="height: 100%">
-	<div class="spinner">
-		<div class="spinner-container container1">
-			<div class="circle1"></div>
-			<div class="circle2"></div>
-			<div class="circle3"></div>
-			<div class="circle4"></div>
-		</div>
-		<div class="spinner-container container2">
-			<div class="circle1"></div>
-			<div class="circle2"></div>
-			<div class="circle3"></div>
-			<div class="circle4"></div>
-		</div>
-		<div class="spinner-container container3">
-			<div class="circle1"></div>
-			<div class="circle2"></div>
-			<div class="circle3"></div>
-			<div class="circle4"></div>
-		</div>
-	</div>
-</div>
-
 <!-- all content  -->
 <div class="wrapper" id="content">
 	<!-- header start -->
@@ -150,12 +115,12 @@
 					<ul>
 						<li><a href="index?more=1">
 								<span class="icon icon-quanbushangpin"></span><span class="t"><span>全部商品</span></span></a></li>
-						<li><a href="toSearch">
+						<li><a href="javascript:void(0)">
 								<span class="icon icon-sousuo"></span><span class="t"><span>搜索</span></span></a></li>
 						<li><a href="https://developers.weixin.qq.com/community/servicemarket">
 								<span class="icon icon-shequ"></span><span class="t"><span>微信社区</span></span></a></li>
-						<li><a href="javascript:void(0)" class="red">
-								<span class="icon icon-kehuduan"></span><span class="t"><span>客户端</span></span></a></li>
+						<li><a href="https://work.weixin.qq.com/" class="red">
+								<span class="icon icon-kehuduan"></span><span class="t"><span>企业版</span></span></a></li>
 					</ul>
 				</div>
 

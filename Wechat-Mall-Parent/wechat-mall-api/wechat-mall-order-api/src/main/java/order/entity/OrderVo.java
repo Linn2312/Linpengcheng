@@ -2,6 +2,7 @@ package order.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -11,7 +12,7 @@ import java.util.List;
  * 用于接收解析前台传来的json字符串之后的实体类
  */
 @Data
-public class OrderVo {
+public class OrderVo implements Serializable {
     /**
      * 购物车选中的商品的id
      */

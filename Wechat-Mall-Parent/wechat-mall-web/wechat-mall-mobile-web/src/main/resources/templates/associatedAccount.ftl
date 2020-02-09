@@ -43,8 +43,7 @@
 			</div>
 
 			<div class="nl-phone-tip">
-				<div id="message_LOGIN_PHONETIP">非大陆地区请在手机号码前面添加当地的国际代码前缀(如香港
-					+852 台湾 +886)</div>
+				<div id="message_LOGIN_PHONETIP">目前暂支持中国大陆手机号，请务必填写正确</div>
 				<div id="select_country_code">帮助</div>
 			</div>
 
@@ -64,8 +63,8 @@
 						</div>
 
 						<input class="button orange" type="submit"
-							id="message_LOGIN_IMMEDIATELY" value="关联新账户" onclick="javascript:location.href='toRegister'">
-						<span id="custom_display_128" onclick="javascript:location.href='toLogin?source=qq'">
+							id="message_LOGIN_IMMEDIATELY" value="关联新账户" onclick="location.href='toRegister'">
+						<span id="custom_display_128" onclick="location.href='toLogin?source=qq'">
 							<a href="#" class="button" id="message_REGISTER">关联已有账号</a>
 						</span>  <a style="display: none" id="redirectLink" href="" target="_top"></a>
 						<a style="display: none" id="redirectTwoPhraseLoginLink" href=""></a>
