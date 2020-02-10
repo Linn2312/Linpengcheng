@@ -12,10 +12,18 @@ spring:
     name: service-zuul
 zuul:
   routes:
-    #web工程网关配置
+    #mobile-web工程网关配置
     api-a:
       path: /mobile-web/**  #访问只要是/mobile-web/ 开头的直接转发到mobile-web服务
       service-id: mobile-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
+    #pay-web工程网关配置
+    api-b:
+      path: /pay-web/**  #访问只要是/pay-web/ 开头的直接转发到pay-web服务
+      service-id: pay-web
       strip-prefix: false
       ##忽略敏感信息 置空 防止丢失cookie
       sensitive-headers:

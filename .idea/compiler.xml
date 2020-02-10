@@ -21,6 +21,7 @@
         <module name="wechat-mall-order-api" />
         <module name="wechat-mall-pay" />
         <module name="wechat-mall-pay-api" />
+        <module name="wechat-mall-pay-web" />
         <module name="wechat-mall-zuul-81" />
         <module name="wechat-mall-zuul-82" />
       </profile>

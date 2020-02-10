@@ -19,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82" charset="UTF-8" />
   </component>

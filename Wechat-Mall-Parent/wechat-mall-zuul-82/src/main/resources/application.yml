@@ -20,6 +20,14 @@ zuul:
       ##忽略敏感信息 置空 防止丢失cookie
       sensitive-headers:
       custom-sensitive-headers: true
+    #pay-web工程网关配置
+    api-b:
+      path: /pay-web/**  #访问只要是/pay-web/ 开头的直接转发到pay-web服务
+      service-id: pay-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
   #此处解决后端服务重定向导致用户浏览的 host 变成 后端服务的 host 问题
   add-host-header: true
   host:
