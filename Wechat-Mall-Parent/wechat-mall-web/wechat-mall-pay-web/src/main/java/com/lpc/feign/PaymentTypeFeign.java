@@ -1,5 +1,4 @@
-package com.lpc.feign.pay;
-
+package com.lpc.feign;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import pay.service.api.PaymentTypeService;

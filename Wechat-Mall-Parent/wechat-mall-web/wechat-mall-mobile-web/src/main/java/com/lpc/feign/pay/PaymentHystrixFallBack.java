@@ -4,6 +4,7 @@ import com.lpc.responseConfig.BaseResponseService;
 import order.entity.OrderInfo;
 import org.springframework.stereotype.Component;
 import pay.entity.PaymentInfo;
+import pay.service.api.PaymentTypeService;
 
 import java.util.Map;
 
@@ -12,7 +13,7 @@ import java.util.Map;
  * @Date 2020/1/29
  */
 @Component
-public class PaymentHystrixFallBack extends BaseResponseService implements PaymentInfoFeign,PaymentTypeFeign{
+public class PaymentHystrixFallBack extends BaseResponseService implements PaymentInfoFeign{
 
     @Override
     public Map<String, Object> addPaymentInfo(String orderId, String totalPrice) {
@@ -36,11 +37,6 @@ public class PaymentHystrixFallBack extends BaseResponseService implements Payme
 
     @Override
     public Map<String, Object> updateOrderInfo(OrderInfo orderInfo) {
-        return setResultError("系统正忙，请稍后再试");
-    }
-
-    @Override
-    public Map<String, Object> getPaymentType(Long id) {
         return setResultError("系统正忙，请稍后再试");
     }
 }
