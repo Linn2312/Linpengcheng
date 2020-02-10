@@ -74,15 +74,16 @@ public class YinLianCallbackService implements CallbackService {
 				log.error("###asyn() 异步通知,订单id:{},状态已经为已支付,不能在修改为已支付.",orderId);
 				return Constants.PAY_SUCCES;
 			}
-			paymentInfo.setUpdatedTime(DateUtils.getTimeStamp());
 			paymentInfo.setState(1);
-			paymentInfoFeign.updatePayInfo(paymentInfo); 	//更新支付表中的支付状态
+			paymentInfo.setPlantformorderId(validateData.get("queryId"));
+			paymentInfo.setPayMessage(new JSONObject().toJSONString(validateData));
+			paymentInfoFeign.updatePayInfo(paymentInfo); 	//更新支付表
 
 			OrderInfo orderInfo = new OrderInfo();
 			Byte status = 1;
 			orderInfo.setStatus(status);
 			orderInfo.setId(Long.parseLong(orderId));
-			paymentInfoFeign.updateOrderInfo(orderInfo);				//更新订单表中的支付状态
+			paymentInfoFeign.updateOrderInfo(orderInfo);				//更新订单表
 			log.info("###asyn() 异步通知,订单id:{},状态已经为已支付,修改成功。",orderId);
 		}
 		// 返回给银联服务器http 200 状态码
