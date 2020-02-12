@@ -1,0 +1,27 @@
+version: '2'
+services:
+  eureka-8100:
+    image: eureka:8100
+    container_name: eureka-8100
+    hostname: eureka-8100
+    networks:
+      - eureka-net
+    ports:
+      - 8100:8100
+    environment:
+      - spring.profiles.active=eureka-8100  #eureka.yml中的profiles
+
+  eureka-server2:
+    image: eureka:8200
+    container_name: eureka-8200
+    hostname: eureka-8200
+    networks:
+      - eureka-net
+    ports:
+      - 8200:8200
+    environment:
+      - spring.profiles.active=eureka-8200
+##桥接网络模式
+networks:
+  eureka-net:
+    driver: bridge
