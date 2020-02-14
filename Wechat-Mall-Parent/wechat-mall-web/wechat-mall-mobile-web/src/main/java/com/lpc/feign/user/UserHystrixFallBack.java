@@ -1,7 +1,6 @@
 package com.lpc.feign.user;
 
 import com.lpc.responseConfig.BaseResponseService;
-import member.entity.address;
 import member.entity.mb_user;
 import org.springframework.stereotype.Component;
 
@@ -46,7 +45,7 @@ public class UserHystrixFallBack extends BaseResponseService implements UserFeig
     }
 
     @Override
-    public Map<String, Object> addAddress(address address) {
+    public Map<String, Object> updateUser(mb_user mb_user) {
         return setResultError("系统正忙，请稍后再试");
     }
 }

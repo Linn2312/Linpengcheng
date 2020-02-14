@@ -2,6 +2,7 @@ package com.lpc.controller.cart;
 
 import com.lpc.constants.Constants;
 import com.lpc.controller.base.BaseController;
+import com.lpc.feign.item.ItemFeign;
 import com.lpc.utils.CookieUtil;
 import com.lpc.feign.cart.CartFeign;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +29,8 @@ public class CartController extends BaseController {
     private static final String ERROR = "error";
     @Autowired
     private CartFeign cartFeign;
+    @Autowired
+    private ItemFeign itemFeign;
 
     /**
      * 查询该用户的购物车
@@ -48,7 +51,7 @@ public class CartController extends BaseController {
     }
 
     /**
-     * 加入购物车
+     * 加入购物车  需判断商品库存
      * @return
      */
     @PostMapping("/addCart")
@@ -61,6 +64,10 @@ public class CartController extends BaseController {
         mb_user mb_user = super.getUserInfo(token);
         if (mb_user == null) {
             return setResultError("系统正忙，请稍后再试");
+        }
+        Integer num = itemFeign.selectNum(itemId);
+        if (num==0){
+            return setResultError("商品库存为0，请等候卖家进货");
         }
         return cartFeign.addCart(mb_user.getId().toString(), itemId);
     }

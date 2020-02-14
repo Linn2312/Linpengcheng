@@ -2,6 +2,7 @@ package order.service.api;
 
 import order.entity.OrderInfo;
 import order.entity.OrderVo;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -80,4 +81,10 @@ public interface OrderService {
      */
     @RequestMapping("/selectAllOrders")
     List<OrderInfo> selectAllOrders();
+
+    /**
+     * 更新商品订单信息
+     */
+    @RequestMapping("/updateOrderInfo")
+    Map<String, Object> updateOrderInfo(@RequestBody OrderInfo orderInfo);
 }

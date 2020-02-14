@@ -14,7 +14,7 @@
         function goBack() {
             var footer = document.getElementById("footer");
             if (footer!=null) {
-                var x = window.confirm("订单有效期为10分钟，是否立即支付？");
+                var x = window.confirm("订单有效期为15分钟，是否立即支付？");
                 if (x){
                     void(0);
                 }
@@ -22,7 +22,6 @@
                     window.history.go(-1);
                 }
             }
-            window.history.go(-1);
         }
     </script>
 </head>

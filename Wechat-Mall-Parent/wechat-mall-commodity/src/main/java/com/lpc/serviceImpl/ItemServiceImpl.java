@@ -8,6 +8,7 @@ import com.lpc.utils.ReflectionUtils;
 import commodity.entity.Item;
 import commodity.entity.ItemType;
 import commodity.service.api.ItemService;
+import order.entity.OrderDetail;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -64,6 +65,11 @@ public class ItemServiceImpl extends BaseResponseService implements ItemService 
 	}
 
 	@Override
+	public Integer selectNum(@RequestParam("itemId") String itemId) {
+		return itemDao.selectNum(itemId);
+	}
+
+	@Override
 	public Map<String, Object> getItem(@RequestParam("id") Long id) {
 		Item item = itemDao.getItem(id);
 		if(item == null){
@@ -80,6 +86,15 @@ public class ItemServiceImpl extends BaseResponseService implements ItemService 
 			list.add(item);
 		}
 		return list;
+	}
+
+	@Override
+	public Map<String, Object> decreaseNum(@RequestParam("orderId")String orderId) {
+		List<OrderDetail> list = itemDao.getOrderDetail(orderId);
+		for (OrderDetail orderDetail:list) {
+			itemDao.decreaseNum(orderDetail.getItemId(),orderDetail.getShoppingnum());
+		}
+		return setResultSuccess("商品库存已减少");
 	}
 
 	//反射 获取get方法

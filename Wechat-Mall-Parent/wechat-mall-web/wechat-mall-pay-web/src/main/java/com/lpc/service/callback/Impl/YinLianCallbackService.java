@@ -2,9 +2,10 @@ package com.lpc.service.callback.Impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.lpc.constants.Constants;
-import com.lpc.feign.PaymentInfoFeign;
+import com.lpc.feign.item.ItemFeign;
+import com.lpc.feign.order.OrderFeign;
+import com.lpc.feign.pay.PaymentInfoFeign;
 import com.lpc.service.callback.CallbackService;
-import com.lpc.utils.DateUtils;
 import com.lpc.utils.ResultUtils;
 import com.unionpay.acp.sdk.AcpService;
 import com.unionpay.acp.sdk.LogUtil;
@@ -27,6 +28,10 @@ import java.util.Map.Entry;
 public class YinLianCallbackService implements CallbackService {
 	@Autowired
 	private PaymentInfoFeign paymentInfoFeign;
+	@Autowired
+	private OrderFeign orderFeign;
+	@Autowired
+	private ItemFeign itemFeign;
 
 	@Override
 	public Map<String, String> syn(HttpServletRequest req) {
@@ -83,7 +88,9 @@ public class YinLianCallbackService implements CallbackService {
 			Byte status = 1;
 			orderInfo.setStatus(status);
 			orderInfo.setId(Long.parseLong(orderId));
-			paymentInfoFeign.updateOrderInfo(orderInfo);				//更新订单表
+			orderFeign.updateOrderInfo(orderInfo);				//更新订单表
+			//更新商品库存
+			itemFeign.decreaseNum(paymentInfo.getOrderId());
 			log.info("###asyn() 异步通知,订单id:{},状态已经为已支付,修改成功。",orderId);
 		}
 		// 返回给银联服务器http 200 状态码

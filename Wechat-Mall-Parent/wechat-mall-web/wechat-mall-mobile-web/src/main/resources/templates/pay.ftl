@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
         function goBack() {
-            var x = window.confirm("订单有效期为10分钟，是否需要立即支付？");
+            var x = window.confirm("订单有效期为15分钟，是否需要立即支付？");
             if (x){
                 void(0);
             }
@@ -41,7 +41,8 @@
             <div class="pay-m pay-site">
                 <div class="pay-site-left fl"><img src="images/address.png" height="52px"></div>
                 <div class="pay-site-right" id="addAddress">
-                    <p>选择收货地址</p>
+                    <p>${username}&nbsp;&nbsp;${phone}</p>
+                    <p>${address}</p>
                 </div>
             </div>
         </a>
@@ -77,7 +78,7 @@
                 <span class="pay-input-group-label">
                   <input type="radio" checked="checked">
                 </span>
-                            <div class="pay-manner">微信银联支付</div>
+                            <div class="pay-manner">银联支付</div>
                         </div>
                     </div>
                 </div>

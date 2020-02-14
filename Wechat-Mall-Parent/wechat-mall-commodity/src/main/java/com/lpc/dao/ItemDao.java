@@ -2,8 +2,10 @@ package com.lpc.dao;
 
 import com.lpc.mybatis.BaseDao;
 import commodity.entity.Item;
+import order.entity.OrderDetail;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
@@ -26,4 +28,28 @@ public interface ItemDao extends BaseDao {
 	 */
 	@Select("select * from tb_item where id = #{id}")
     Item getItem(@Param("id") Long id);
+
+	/**
+	 * 查看商品库存
+	 * @param itemId
+	 * @return
+	 */
+	@Select("select num from tb_item where id = #{itemId} ")
+    Integer selectNum(@Param("itemId") String itemId);
+
+	/**
+	 * 更新商品库存
+	 * @param id
+	 * @param num
+	 */
+	@Update("update tb_item set num = num - #{num} where id = #{id}")
+	void decreaseNum(@Param("id") Long id, @Param("num") Long num);
+
+	/**
+	 * 跨库查询订单信息
+	 * @param orderId
+	 * @return
+	 */
+	@Select("select * from `wechat-shop-order`.order_detail where orderId = #{orderId} ")
+	List<OrderDetail> getOrderDetail(@Param("orderId")String orderId);
 }

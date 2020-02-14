@@ -8,7 +8,8 @@
     <!-- 设备浏览网页时对数字不启用电话功能 -->
     <meta content="telephone=no,email=no" name="format-detection" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="css/common.css">
     <!-- 自适应样式单 -->
     <link rel="stylesheet" href="css/adaptive.css">
@@ -16,35 +17,46 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#message_UPDATE_PASSWORD").click(function(){
+            $("#message_REGISTER_IMMEDIATELY").click(function(){
                 if(validate()){
-                    $("#miniUpdate").attr("action","updatePwd");
-                    $("#miniUpdate").submit();
+                    $("#miniRegister").attr("action","updateUser");
+                    $("#miniRegister").submit();
                 }
             });
         });
         function validate() {
+            //用户名称：只能是2-4个中文字符，我们建议您输入自己的名字
+            var name_pattern = /^[\u4e00-\u9fa5]{2,4}$/;
+            var name = $("#miniRegister_username").val();
+            if (!(name_pattern.test(name))){
+                alert("用户名称只能是2-4个中文字符，我们建议您输入自己的名字");
+                return false;
+            }
+            //邮箱格式
+            var email_pattern = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+            var email = $("#miniRegister_email").val();
+            if (!(email_pattern.test(email))){
+                alert("邮箱格式不正确");
+                return false;
+            }
             //手机号码： 以1为开头  第二位可为3,4,5,7,8,中的任意一位 最后是0-9的9个整数
             var phone_pattern = /^1(3|4|5|6|7|8|9)\d{9}$/;
-            var phone = $("#miniUpdate_phone").val();
+            var phone = $("#miniRegister_phone").val();
             if (!(phone_pattern.test(phone))) {
                 alert("手机号码格式不正确");
                 return false;
             }
-            //密码：密码格式为6-20位字符，数字、字母、特殊字符（除空格）的任意组合
-            var pwd_pattern = /^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{6,20}$/;
-            var password = $("#miniUpdate_pwd").val();
-            if (!(pwd_pattern.test(password))){
-                alert("密码格式应为6-20位字符，数字、字母、特殊字符（除空格）的任意组合");
-                return false;
-            }
-            //确认密码
-            var re_pwd = $("#miniUpdate_re_pwd").val();
-            if (re_pwd!==password){
-                alert("两次输入的密码不一致");
+            //地址格式
+            var add_pattern = /.*(省|自治区|市).*(市).*(县|区)/;
+            var address = $("#miniRegister_address").val();
+            if (!(add_pattern.test(address))){
+                alert("地址格式：省（自治区、直辖市）-市-区（县、县级市）");
                 return false;
             }
             return true;
+        }
+        function noClick() {
+            alert("提示：密码无法修改");
         }
     </script>
 </head>
@@ -58,53 +70,71 @@
         </div>
 
         <h1 class="nl-login-title" id="custom_display_256">
-            <span id="message_LOGIN_TITLE">微信商城修改密码</span>
+            <span id="message_LOGIN_TITLE">修改账户信息</span>
         </h1>
-        <h2 class="nl-login-title lsrp-appname display-custom-hide" id="lsrp_appName"></h2>
-
-        <div class="nl-phone-tip">
-            <div id="message_LOGIN_PHONETIP">输入需要找回密码的手机号</div>
-            <div id="select_country_code">帮助</div>
-        </div>
+        <h2 class="nl-login-title lsrp-appname display-custom-hide"
+            id="lsrp_appName"></h2>
 
         <div class="nl-frame-container">
             <div class="ng-form-area show-place" id="form-area">
-                <form method="post" id="miniUpdate">
+                <form method="post" id="miniRegister">
+                    <input type="hidden" name="id" value="${id}">
+                    <div class="shake-area" id="shake_area" style="z-index: 30;">
+                        <div class="enter-area display-custom-hide" id="revalidate_user">
+                            <p class="revalidate-user-name" id="revalidate_user_name"></p>
+                        </div>
+                        <div class="enter-area" id="enter_user">
+                            <input type="text" class="enter-item first-enter-item"
+                                   id="miniRegister_username" name="username"
+                                   autocomplete="off" placeholder="用户名称" value="${username}">
+                        </div>
+                        <div class="enter-area" id="enter_user">
+                            <input type="text" name="email"
+                                   class="enter-item last-enter-item"
+                                   id="miniRegister_email" autocomplete="off"
+                                   placeholder="邮&nbsp;&nbsp;&nbsp;&nbsp;箱" value="${email}">
+                        </div>
+                    </div>
 
                     <div class="shake-area" id="shake_area" style="z-index: 30;">
                         <div class="enter-area display-custom-hide" id="revalidate_user">
                             <p class="revalidate-user-name" id="revalidate_user_name"></p>
                         </div>
+                        <div class="enter-area" id="enter_user">
+                            <input type="text" name="phone"
+                                   class="enter-item first-enter-item"
+                                   id="miniRegister_phone" autocomplete="off"
+                                   placeholder="手机号码" value="${phone}">
+                        </div>
                         <div class="enter-area" style="z-index: 20;">
-                            <input type="text" name="phone" class="enter-item" id="miniUpdate_phone"
-                                   autocomplete="off" placeholder="手机号码">
+                            <input type="password" class="enter-item last-enter-item"
+                                   id="miniRegister_pwd" name="password" autocomplete="off"
+                                   placeholder="密码" value="${password}" readonly="readonly" onclick="noClick()">
                         </div>
                     </div>
-
 
                     <div class="shake-area" id="shake_area" style="z-index: 30;">
                         <div class="enter-area display-custom-hide" id="revalidate_user">
                             <p class="revalidate-user-name" id="revalidate_user_name"></p>
                         </div>
-                        <div class="enter-area" style="z-index: 20;">
-                            <input type="password" name="password" class="enter-item first-enter-item" id="miniUpdate_pwd"
-                                   autocomplete="off" placeholder="新密码">
-                        </div>
-                        <div class="enter-area" style="z-index: 20;">
-                            <input type="password" name="re_password" class="enter-item last-enter-item" id="miniUpdate_re_pwd"
-                                   autocomplete="off" placeholder="确认密码">
+                        <div class="enter-area" id="enter_user">
+                            <input type="text" name="address"
+                                   class="enter-item first-enter-item"
+                                   id="miniRegister_address" autocomplete="off"
+                                   placeholder="地址：省（自治区、直辖市）-市-区（县、县级市）"value="${address}">
                         </div>
                     </div>
 
-
-                    <input class="button orange" type="button" id="message_UPDATE_PASSWORD" value="修改密码">
-                    <span id="custom_display_8"></span>
-                    <#if error ??>
+                    <#if error??>
                         <div>
-                            <span id="errorMsg" style="color: red;font-size: 13px">${error}</span>
+							<span id="message_LOGIN_TOO_MUCH" style="color: red">
+								${error}
+                            </span>
                         </div>
                     </#if>
+                    <input class="button orange" type="button" id="message_REGISTER_IMMEDIATELY" value="点击修改">
                 </form>
+
             </div>
         </div>
 
@@ -112,6 +142,5 @@
             <p class="web-info-content" id="web_info_content"></p>
         </div>
     </div>
-</div>
 </body>
 </html>

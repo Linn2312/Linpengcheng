@@ -1,6 +1,5 @@
 package member.service.api;
 
-import member.entity.address;
 import member.entity.mb_user;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -66,10 +65,10 @@ public interface UserService {
     Map<String, Object> updatePwd(@RequestParam("phone") String phone,@RequestParam("password") String password);
 
     /**
-     * 添加收获地址
-     * @param address
+     * 修改用户信息
+     * @param mb_user
      * @return
      */
-    @RequestMapping("/addAddress")
-    Map<String, Object> addAddress(address address);
+    @RequestMapping("/updateUser")
+    Map<String, Object> updateUser(@RequestBody mb_user mb_user);
 }

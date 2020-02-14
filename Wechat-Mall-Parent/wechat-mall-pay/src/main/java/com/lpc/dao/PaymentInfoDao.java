@@ -1,10 +1,13 @@
 package com.lpc.dao;
 
 import com.lpc.mybatis.BaseDao;
+import order.entity.OrderDetail;
 import order.entity.OrderInfo;
 import org.apache.ibatis.annotations.*;
 import org.springframework.data.repository.query.Param;
 import pay.entity.PaymentInfo;
+
+import java.util.List;
 
 
 @Mapper
@@ -22,7 +25,4 @@ public interface PaymentInfoDao extends BaseDao {
 
 	@Update("update payment_info set state =#{state},paymessage=#{payMessage},plantformorderId=#{plantformorderId},updatedTime=#{updatedTime} where orderid=#{orderId} ")
 	void updatePayInfo(PaymentInfo paymentInfo);
-
-	@Update("update `wechat-shop-order`.order_info set status = #{status},updatedTime = #{updatedTime} where id = #{id}")
-    void updateOrderInfo(OrderInfo orderInfo);
 }

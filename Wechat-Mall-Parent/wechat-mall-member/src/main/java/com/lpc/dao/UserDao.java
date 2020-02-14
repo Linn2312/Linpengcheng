@@ -1,12 +1,10 @@
 package com.lpc.dao;
 
 import com.lpc.mybatis.BaseDao;
-import member.entity.address;
 import member.entity.mb_user;
 import org.apache.ibatis.annotations.*;
 
 import java.sql.Timestamp;
-import java.util.Map;
 
 /**
  * @author Lin
@@ -52,7 +50,7 @@ public interface UserDao extends BaseDao {
     /**
      * 修改密码
      */
-    @Update("update mb_user set password = #{password} updatedTime = #{updatedTime} where phone = #{phone}")
+    @Update("update mb_user set password = #{password},updatedTime = #{updatedTime} where phone = #{phone}")
     int updatePwd(mb_user mb_user);
 
     /**
@@ -72,4 +70,10 @@ public interface UserDao extends BaseDao {
      */
     @Select("select * from mb_user where email = #{email}")
     mb_user selectUserByEmail(@Param("email") String email);
+
+    /**
+     * 修改用户信息
+     */
+    @Update("update mb_user set username = #{username} ,email = #{email} ,phone = #{phone},address = #{address} where id = #{id}")
+    int updateUser(mb_user mb_user);
 }

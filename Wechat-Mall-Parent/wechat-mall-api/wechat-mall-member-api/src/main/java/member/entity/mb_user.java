@@ -18,5 +18,6 @@ public class mb_user extends BaseEntity implements Serializable {
     private String password;
     private String phone;
     private String email;
+    private String address;
     private String openID;
 }

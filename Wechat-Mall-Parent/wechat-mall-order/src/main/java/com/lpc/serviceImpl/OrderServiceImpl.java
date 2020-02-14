@@ -9,6 +9,7 @@ import order.entity.OrderDetail;
 import order.entity.OrderInfo;
 import order.service.api.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -105,4 +106,10 @@ public class OrderServiceImpl extends BaseResponseService implements OrderServic
         return orderDao.getOrderStatus(orderId);
     }
 
+    @Override
+    public Map<String, Object> updateOrderInfo(@RequestBody OrderInfo orderInfo) {
+        orderInfo.setUpdatedTime(DateUtils.getTimeStamp());
+        orderDao.updateOrderInfo(orderInfo);
+        return setResultSuccess();
+    }
 }

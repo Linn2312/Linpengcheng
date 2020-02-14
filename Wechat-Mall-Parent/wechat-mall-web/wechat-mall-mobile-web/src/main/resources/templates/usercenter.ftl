@@ -56,7 +56,11 @@
 		<ul class="m-user-content">
 			<li>
 				<div class="m-user-item">
-					<a href="javascript:void(0)" class="user-set">设置</a>
+					<#if username?exists>
+						<a href="toUpdateUser" class="user-set">信息修改</a>
+					<#else>
+						<a href="javascript:void(0)" onclick="gogo()" class="user-set">信息修改</a>
+					</#if>
 				</div>
 				<div class="m-user-item">
 					<div class="user-score"><span class="pull-right">400-110110</span>联系客服</div>

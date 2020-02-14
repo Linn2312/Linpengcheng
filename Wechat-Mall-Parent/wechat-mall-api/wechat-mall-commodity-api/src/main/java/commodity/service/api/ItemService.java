@@ -49,4 +49,16 @@ public interface ItemService {
 	 */
 	@RequestMapping("/search")
 	List<Item> search(@RequestParam("keywords")String keywords);
+
+	/**
+	 * 查看商品库存
+	 */
+	@RequestMapping("/selectNum")
+    Integer selectNum(@RequestParam("itemId") String itemId);
+
+	/**
+	 * 更新商品库存
+	 */
+	@RequestMapping("/decreaseNum")
+	Map<String, Object> decreaseNum(@RequestParam("orderId")String orderId);
 }

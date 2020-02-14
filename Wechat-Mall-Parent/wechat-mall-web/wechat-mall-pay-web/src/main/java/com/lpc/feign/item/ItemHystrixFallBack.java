@@ -3,7 +3,6 @@ package com.lpc.feign.item;
 import com.lpc.responseConfig.BaseResponseService;
 import commodity.entity.Item;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 import java.util.Map;
@@ -13,12 +12,7 @@ import java.util.Map;
  * @Date 2020/1/29
  */
 @Component
-public class ItemHystrixFallBack extends BaseResponseService implements ItemFeign,ItemDescFeign{
-
-    @Override
-    public Map<String, Object> getItemDesc(Long id) {
-        return setResultError("系统正忙，请稍后再试");
-    }
+public class ItemHystrixFallBack extends BaseResponseService implements ItemFeign{
 
     @Override
     public Map<String, Object> getItems() {

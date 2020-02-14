@@ -53,6 +53,13 @@
                 alert("密码格式为6-20位字符，数字、字母、特殊字符（除空格）的任意组合");
                 return false;
             }
+            //地址格式
+            var add_pattern = /.*(省|自治区|市).*(市).*(县|区)/;
+            var address = $("#miniRegister_address").val();
+            if (!(add_pattern.test(address))){
+                alert("地址格式不正确");
+                return false;
+            }
             return true;
         }
     </script>
@@ -111,6 +118,18 @@
                             <input type="password" class="enter-item last-enter-item"
                                    id="miniRegister_pwd" name="password" autocomplete="off"
                                    placeholder="密码">
+                        </div>
+                    </div>
+
+                    <div class="shake-area" id="shake_area" style="z-index: 30;">
+                        <div class="enter-area display-custom-hide" id="revalidate_user">
+                            <p class="revalidate-user-name" id="revalidate_user_name"></p>
+                        </div>
+                        <div class="enter-area" id="enter_user">
+                            <input type="text" name="address"
+                                   class="enter-item first-enter-item"
+                                   id="miniRegister_address" autocomplete="off"
+                                   placeholder="地址：省（自治区、直辖市）-市-区（县、县级市）">
                         </div>
                     </div>
 

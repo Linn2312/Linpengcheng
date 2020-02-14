@@ -2,7 +2,7 @@ package com.lpc.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.lpc.constants.BaseResponseConstants;
-import com.lpc.feign.PaymentInfoFeign;
+import com.lpc.feign.pay.PaymentInfoFeign;
 import com.lpc.service.pay.impl.PayImplService;
 import com.lpc.utils.ResultUtils;
 import org.springframework.beans.factory.annotation.Autowired;

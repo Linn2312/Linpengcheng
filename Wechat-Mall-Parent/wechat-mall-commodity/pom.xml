@@ -20,6 +20,12 @@
             <artifactId>wechat-mall-commodity-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--引入order服务接口模块-->
+        <dependency>
+            <groupId>com.lpc</groupId>
+            <artifactId>wechat-mall-order-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--集成mybatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>

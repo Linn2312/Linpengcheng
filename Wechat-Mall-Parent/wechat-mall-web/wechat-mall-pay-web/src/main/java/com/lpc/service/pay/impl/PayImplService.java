@@ -1,7 +1,7 @@
 package com.lpc.service.pay.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lpc.feign.PaymentTypeFeign;
+import com.lpc.feign.pay.PaymentTypeFeign;
 import com.lpc.service.adapter.Impl.YinLianPay;
 import com.lpc.service.adapter.PayAdapterService;
 import com.lpc.service.pay.PayService;

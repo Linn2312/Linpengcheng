@@ -1,12 +1,10 @@
 package pay.service.api;
 
-import order.entity.OrderInfo;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import pay.entity.PaymentInfo;
 
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -42,10 +40,4 @@ public interface PaymentInfoService {
      */
     @RequestMapping("/updatePayInfo")
     Map<String, Object> updatePayInfo(@RequestBody PaymentInfo paymentInfo);
-
-    /**
-     * 更新商品订单信息
-     */
-    @RequestMapping("/updateOrderInfo")
-    Map<String, Object> updateOrderInfo(@RequestBody OrderInfo orderInfo);
 }

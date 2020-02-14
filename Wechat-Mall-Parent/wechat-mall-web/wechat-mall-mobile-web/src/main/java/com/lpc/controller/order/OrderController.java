@@ -12,6 +12,7 @@ import commodity.entity.Item;
 import member.entity.mb_user;
 import order.entity.OrderInfo;
 import order.entity.OrderVo;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -130,6 +131,12 @@ public class OrderController extends BaseController {
         if (itemList==null){
             return super.setError(request,"系统正忙，请稍后再试",ERROR);
         }
+        //查询买家的信息 姓名手机号地址
+        String token = CookieUtil.getUid(request, Constants.USER_TOKEN);
+        mb_user mb_user = super.getUserInfo(token);
+        request.setAttribute("address",mb_user.getAddress());
+        request.setAttribute("phone",mb_user.getPhone());
+        request.setAttribute("username",mb_user.getUsername());
         request.setAttribute("totalPrice",totalPrice);
         request.setAttribute("itemList",itemList);
         request.setAttribute("orderId",orderId);

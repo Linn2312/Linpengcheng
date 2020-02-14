@@ -1,7 +1,6 @@
-package com.lpc.feign;
+package com.lpc.feign.pay;
 
 import com.lpc.responseConfig.BaseResponseService;
-import order.entity.OrderInfo;
 import org.springframework.stereotype.Component;
 import pay.entity.PaymentInfo;
 
@@ -31,11 +30,6 @@ public class PaymentHystrixFallBack extends BaseResponseService implements Payme
 
     @Override
     public Map<String, Object> updatePayInfo(PaymentInfo paymentInfo) {
-        return setResultError("系统正忙，请稍后再试");
-    }
-
-    @Override
-    public Map<String, Object> updateOrderInfo(OrderInfo orderInfo) {
         return setResultError("系统正忙，请稍后再试");
     }
 

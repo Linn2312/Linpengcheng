@@ -45,4 +45,7 @@ public interface OrderDao extends BaseDao {
 
     @Select("select * from order_info")
     List<OrderInfo> selectAllOrders();
+
+    @Update("update order_info set status = #{status},updatedTime = #{updatedTime} where id = #{id}")
+    void updateOrderInfo(OrderInfo orderInfo);
 }

@@ -12,7 +12,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.lpc.dao.UserDao;
 import com.lpc.mailBoxProducer.MailBoxProducer;
 import lombok.extern.slf4j.Slf4j;
-import member.entity.address;
 import member.entity.mb_user;
 import member.service.api.UserService;
 import org.apache.activemq.command.ActiveMQQueue;
@@ -129,7 +128,6 @@ public class UserServiceImpl extends BaseResponseService implements UserService 
         //进入数据库查询
         Long id = Long.parseLong(userId);
         mb_user userInfo = userDao.getUserById(id);
-        userInfo.setPassword("");   //密码一定要置空，不能让后台看见
         return setResultSuccessData(userInfo);
     }
 
@@ -175,9 +173,12 @@ public class UserServiceImpl extends BaseResponseService implements UserService 
     }
 
     @Override
-    public Map<String, Object> addAddress(address address) {
-        userDao.save(address,DBTable.ADDRESS);
-        return setResultSuccess("添加地址成功");
+    public Map<String, Object> updateUser(@RequestBody mb_user mb_user) {
+        int i = userDao.updateUser(mb_user);
+        if (i==0){
+            return setResultError("更新账户信息失败");
+        }
+        return setResultSuccess("更新账户信息成功");
     }
 
     /**
