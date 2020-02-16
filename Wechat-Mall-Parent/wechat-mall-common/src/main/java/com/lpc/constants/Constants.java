@@ -7,13 +7,17 @@ package com.lpc.constants;
 public interface Constants {
     //设置用户登录的redis缓存过期时间为10天
     long REDIS_TIME_OUT = 60*60*24*30L;
-    //token
-    String USER_TOKEN = "token";
+    //user-token
+    String USER_TOKEN = "user_token";
+    //pay-token
+    String PAY_TOKEN = "pay_token";
     //cookie过期时间 10天  秒为单位
     int WEB_USER_COOKIE_MAX_AGE = 60*60*24*30;
+    //设置支付token的cookie有效期 15分钟 秒为单位
+    int WEB_PAY_COOKIE_MAX_AGE = 60*15;
     //qq授权 openID
     String USER_OPENID = "openID";
-    //设置购物车的redis缓存有效期 10天 秒为单位
+    //设置购物车的redis缓存有效期 30天 秒为单位
     Long USER_SHOP_TERMOFVALIDITY = 60*60*24*30L;
     //支付成功
     String PAY_SUCCES = "ok";
