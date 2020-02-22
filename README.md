@@ -22,7 +22,7 @@
 |--wechat-shop-parent (总的父工程,统一定义pom依赖和各种版本信息)<br>
      &emsp;|--wechat-shop-common (工具类)<br>
      &emsp;|--wechat-shop-eureka-server-8100<br>
-     &emsp;|--wechat-shop-eureka-server-9100<br>
+     &emsp;|--wechat-shop-eureka-server-8200<br>
      &emsp;|--wechat-shop-api (接口父工程)<br>
         &emsp;&emsp;|--wechat-shop-member-api (会员服务接口)<br>
         &emsp;&emsp;|--wechat-shop-commodity-api (商品服务接口)<br>
@@ -36,8 +36,12 @@
      &emsp;|--wechat-shop-order(服务层：订单服务的实现          端口号8004)<br>
      &emsp;|--wechat-shop-pay(服务层：支付服务的实现            端口号8005  redis 6382)<br>
      &emsp;|--wechat-shop-web(表现层父工程)<br>
- 	    &emsp;&emsp;|--wechat-shop-mobile-web(表现层：商城系统      端口号8010)<br>
- 	    &emsp;&emsp;|--wechat-shop-pay-web(表现层：支付系统        端口号8011)<br>
+ 	    &emsp;&emsp;|--wechat-shop-mobile-web(表现层：会员系统      端口号8020)<br>
+ 	    &emsp;&emsp;|--wechat-shop-index-web(表现层：商城门户子系统     端口号8010)<br>
+ 	    &emsp;&emsp;|--wechat-shop-cart-web(表现层：购物车子系统      端口号8030)<br>
+ 	    &emsp;&emsp;|--wechat-shop-order-web(表现层：订单子系统      端口号8040)<br>
+ 	    &emsp;&emsp;|--wechat-shop-pay-web(表现层：支付子系统      端口号8050)<br>
+ 	    &emsp;&emsp;|--wechat-shop-usercenter-web(表现层：用户中心子系统   端口号8060)<br>
      &emsp;|--wechat-shop-zuul-81(网关    端口号81)<br>
      &emsp;|--wechat-shop-zuul-82(网关    端口号82)<br>
 <br>

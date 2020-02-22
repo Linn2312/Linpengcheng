@@ -1,42 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c8b5aa6-bae2-4068-a8f3-b20c7b4b8045" name="Default Changelist" comment="拆分web端工程。单独分出一支支付端工程。使用nginx做反向代理实现本机跨域请求">
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/PayWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/PayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/YinLianCallbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentHystrixFallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentInfoFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/load/AutoLoadRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/adapter/Impl/YinLianPay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/adapter/PayAdapterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/callback/CallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/callback/Impl/YinLianCallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/pay/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/pay/impl/PayImplService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/AcpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/BaseHttpSSLSocketFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/CertUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/DemoBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/LogUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SDKConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SDKConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SDKUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SecureUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/acp_sdk.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/static/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay_fail.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay_success.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/wechat-mall-pay-web.iml" afterDir="false" />
+    <list default="true" id="8c8b5aa6-bae2-4068-a8f3-b20c7b4b8045" name="Default Changelist" comment="1.拆分mobile-web子系统。分为用户子系统、商城门户子系统、购物车子系统、订单子系统、支付子系统、用户中心子系统。各子系统间通信通过nginx作端口跨域请求&#10;2.添加zuul网关熔断机制">
+      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/src/main/resources/docker/wechat-mall-eureka-8100-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/src/main/resources/docker/wechat-mall-eureka-8200-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentHystrixFallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentHystrixFallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentTypeFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentTypeFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqconnect.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qqconnect.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/target/classes/commodity/service/api/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/target/classes/commodity/service/api/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/target/classes/member/entity/address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/target/classes/member/entity/mb_user.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/target/classes/member/entity/mb_user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/target/classes/member/service/api/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/target/classes/member/service/api/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/target/classes/pay/service/api/PaymentInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/target/classes/pay/service/api/PaymentInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/target/classes/com/lpc/dao/ItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/target/classes/com/lpc/dao/ItemDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/target/classes/com/lpc/serviceImpl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/target/classes/com/lpc/serviceImpl/ItemServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/target/classes/com/lpc/constants/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/target/classes/com/lpc/constants/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/target/classes/com/lpc/constants/DBTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/target/classes/com/lpc/constants/DBTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/wechat-mall-eureka-8100.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/wechat-mall-eureka-8100.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/wechat-mall-eureka-8200.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/wechat-mall-eureka-8200.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/target/classes/com/lpc/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/target/classes/com/lpc/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/target/classes/com/lpc/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/target/classes/com/lpc/serviceImpl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/src/main/java/com/lpc/adapter/adapterImpl/FindPasswordImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/src/main/java/com/lpc/adapter/adapterImpl/FindPasswordImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/target/classes/com/lpc/adapter/adapterImpl/FindPasswordImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/target/classes/com/lpc/adapter/adapterImpl/FindPasswordImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/wechat-mall-message.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/wechat-mall-message.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/target/classes/META-INF/wechat-mall-order.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/target/classes/com/lpc/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/target/classes/com/lpc/dao/OrderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/target/classes/com/lpc/serviceImpl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/target/classes/com/lpc/serviceImpl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/target/classes/com/lpc/dao/PaymentInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/target/classes/com/lpc/dao/PaymentInfoDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/target/classes/com/lpc/serviceImpl/PaymentInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/target/classes/com/lpc/serviceImpl/PaymentInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/META-INF/wechat-mall-mobile-web.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/MobileWebApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/base/BaseController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/cart/CartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/item/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/item/ItemDescController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/order/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/pay/PayController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/user/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/user/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/controller/user/UserCenterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/cart/CartFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/cart/CartHystrixFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/item/ItemDescFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/item/ItemFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/item/ItemHystrixFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/order/OrderFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/order/OrderHystrixFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/pay/PaymentHystrixFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/pay/PaymentInfoFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/pay/PaymentTypeFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/user/UserFeign.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/feign/user/UserHystrixFallBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/multiThread/ThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/com/lpc/timeSchedule/OrderSchedule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/qqconnectconfig.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/css/cart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/css/loading.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/css/order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/css/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/css/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/js/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/js/sm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/js/swipe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/static/js/zepto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/associatedAccount.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/associatedAccount.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/forgotPwd.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/forgotPwd.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/index.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/orderDetail.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/pay.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/register.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/register.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/searchResult.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/showmore.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/updatePwd.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/updatePwd.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/target/classes/templates/usercenter.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/target/classes/zuul82/filter/TokenFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/target/classes/zuul82/filter/TokenFilter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/target/" />
     <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/target/" />
@@ -62,6 +108,10 @@
     <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/target/" />
     <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/target/" />
     <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/target/" />
+    <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-commodity-web/target/" />
+    <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-user-web/target/" />
+    <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-index-web/target/" />
+    <ignored path="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +142,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -118,59 +169,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/src/main/java/commodity/entity/Item.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/searchResult.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/showmore.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/search.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/item/IndexController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/static/css/search.css" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/static/css/index.css" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/user/UserCenterController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/usercenter.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/src/main/java/com/lpc/mybatis/BaseProvider.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/src/main/java/com/lpc/serviceImpl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/src/main/java/com/lpc/constants/Constants.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/user/RegisterController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/updatePwd.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/login.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/register.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/associatedAccount.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/forgotPwd.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/qqconnectconfig.properties" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/src/main/java/pay/entity/PaymentInfo.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/src/main/java/pay/entity/PaymentType.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/src/main/java/order/entity/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/src/main/java/order/entity/OrderInfo.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/src/main/java/order/entity/OrderVo.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/src/main/java/member/entity/mb_user.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/src/main/java/member/entity/address.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/src/main/java/commodity/entity/ItemType.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/src/main/java/commodity/entity/ItemDesc.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-cart-api/src/main/java/cart/entity/Cart.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/user/LoginController.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/pom.xml" />
         <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/index.ftl" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/service/adapter/Impl/YinLianPay.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/base/BaseController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentHystrixFallBack.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/callback/Impl/YinLianCallbackService.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/pay/impl/PayImplService.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/pay/YinLianCallbackController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/PayWebApplication.java" />
         <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/pay/PayController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/pom.xml" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/pay/PayController.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentTypeFeign.java" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentInfoFeign.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/MobileWebApplication.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-index-web/src/main/resources/templates/index.ftl" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentHystrixFallBack.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-cart-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-commodity-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-member-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8100/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/pom.xml" />
         <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/pom.xml" />
         <option value="$PROJECT_DIR$/Wechat-Mall-Parent/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/resources/templates/usercenter.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/PayController.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/java/com/lpc/controller/UserCenterController.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/java/com/lpc/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/src/main/java/com/lpc/zuul81/filter/TokenFilter.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/java/zuul82/filter/TokenFilter.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/resources/templates/error.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/error.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/resources/templates/error.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/error.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-index-web/src/main/resources/templates/error.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-cart-web/src/main/resources/templates/error.ftl" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/src/main/java/com/lpc/zuul81/fallback/ServiceFallBack.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/java/zuul82/fallback/ServiceFallBack.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/pom.xml" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/base/BaseController.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/src/main/java/order/service/api/OrderService.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/java/com/lpc/feign/OrderHystrixFallBack.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/order/OrderHystrixFallBack.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/src/main/java/com/lpc/serviceImpl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/src/main/java/com/lpc/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/schedule/OrderSchedule.java" />
+        <option value="$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/java/com/lpc/feign/OrderHystrixFallBack.java" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -192,8 +249,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="-9" />
     <option name="width" value="1940" />
     <option name="height" value="1060" />
   </component>
@@ -206,6 +262,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,7 +274,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,9 +283,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581338721403" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582365343988" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../B2C/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -237,7 +293,7 @@
     <property name="project.structure.side.proportion" value="0.403171" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -247,18 +303,18 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="zuul82.fallback" />
+      <recent name="com.lpc.base" />
+      <recent name="com.lpc.controller" />
       <recent name="com.lpc.load" />
       <recent name="com.lpc.controller.base" />
-      <recent name="eureka8100" />
-      <recent name="com.lpc.feign.pay" />
-      <recent name="com.lpc.feign.order" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\resources\static\css" />
-      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\resources\templates" />
-      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\java\com\unionpay\acp\sdk" />
-      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\java\com\lpc\feign" />
-      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\java\com\lpc\service" />
+      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\src\main" />
+      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\java\com\lpc\feign\user" />
+      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-pay-web\src\main\java\com\lpc\schedule" />
+      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-usercenter-web\src\main\resources\templates" />
+      <recent name="F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-usercenter-web\src\main\java\com\lpc\feign" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,9 +333,9 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.2431694" />
+    <option name="contentProportion" value="0.24180327" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CommodityServerApplication">
+  <component name="RunManager" selected="Spring Boot.UserCenterWebApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -299,27 +355,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CartServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wechat-mall-cart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lpc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.CartServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommodityServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="wechat-mall-commodity" />
+    <configuration name="CartWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="wechat-mall-cart-web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lpc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.CartWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommodityServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wechat-mall-commodity" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.CommodityServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -332,22 +389,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Eureka8200Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Eureka8200Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wechat-mall-eureka-8200" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lpc.eureka8200.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.eureka8200.Eureka8200Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="wechat-mall-member" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.MemberServerApplication" />
+    <configuration name="IndexWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="wechat-mall-index-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.IndexWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,14 +430,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MobileWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wechat-mall-mobile-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lpc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.MobileWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -389,6 +440,19 @@
     <configuration name="OrderServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="wechat-mall-order" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.OrderServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="wechat-mall-order-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.OrderWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -409,6 +473,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.PayWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCenterWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="wechat-mall-usercenter-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lpc.UserCenterWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -445,27 +522,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.PayServerApplication" />
-      <item itemvalue="Spring Boot.MessageServerApplication" />
-      <item itemvalue="Spring Boot.MemberServerApplication" />
-      <item itemvalue="Spring Boot.OrderServerApplication" />
-      <item itemvalue="Spring Boot.ZuulServer81Application" />
-      <item itemvalue="Spring Boot.ZuulServer82Application" />
-      <item itemvalue="Spring Boot.CartServerApplication" />
-      <item itemvalue="Spring Boot.MobileWebApplication" />
-      <item itemvalue="Spring Boot.PayWebApplication" />
-      <item itemvalue="Spring Boot.Eureka8200Application" />
-      <item itemvalue="Spring Boot.CommodityServerApplication" />
-      <item itemvalue="Spring Boot.Eureka8100Application" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PayWebApplication" />
-        <item itemvalue="Spring Boot.MobileWebApplication" />
-        <item itemvalue="Spring Boot.CommodityServerApplication" />
-        <item itemvalue="Spring Boot.CartServerApplication" />
-        <item itemvalue="Spring Boot.Eureka8200Application" />
+        <item itemvalue="Spring Boot.UserCenterWebApplication" />
+        <item itemvalue="Spring Boot.IndexWebApplication" />
+        <item itemvalue="Spring Boot.MemberServerApplication" />
+        <item itemvalue="Spring Boot.OrderWebApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -528,6 +591,20 @@
       <workItem from="1581258961522" duration="1404000" />
       <workItem from="1581330573631" duration="5775000" />
       <workItem from="1581336724027" duration="1210000" />
+      <workItem from="1581572037981" duration="207000" />
+      <workItem from="1581667975939" duration="8491000" />
+      <workItem from="1581679177924" duration="9779000" />
+      <workItem from="1581835221432" duration="8298000" />
+      <workItem from="1581948943173" duration="176000" />
+      <workItem from="1582013731664" duration="244000" />
+      <workItem from="1582178985424" duration="1730000" />
+      <workItem from="1582181451645" duration="3502000" />
+      <workItem from="1582292703971" duration="9022000" />
+      <workItem from="1582341188422" duration="4299000" />
+      <workItem from="1582347580725" duration="2555000" />
+      <workItem from="1582350761576" duration="999000" />
+      <workItem from="1582351873232" duration="427000" />
+      <workItem from="1582352388694" duration="10960000" />
     </task>
     <task id="LOCAL-00001" summary="使用logstash全量同步mysql到es后，使用es进行全文搜索">
       <created>1580643368910</created>
@@ -585,13 +662,41 @@
       <option name="project" value="LOCAL" />
       <updated>1581336082766</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="docker-compose构建eureka集群">
+      <created>1581515398268</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581515398268</updated>
+    </task>
+    <task id="LOCAL-00010" summary="添加功能&#10;1.会员表添加收货地址字段，用户注册时需输入地址信息&#10;2.用户中心添加信息修改功能&#10;3.修改支付成功后的订单更新操作&#10;4.支付成功后库存减少&#10;5.代码优化">
+      <created>1581688566881</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581688566882</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修改支付业务；修改订单有效期为15分钟">
+      <created>1581843679820</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581843679820</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1.拆分mobile-web子系统。分为用户子系统、商城门户子系统、购物车子系统、订单子系统、支付子系统、用户中心子系统。各子系统间通信通过nginx作端口跨域请求&#10;2.添加zuul网关熔断机制">
+      <created>1582364867341</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582364867342</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386280000" />
+    <option name="totallyTimeSpent" value="447649000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -601,9 +706,52 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27815014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29021448" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4674221" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.49787837" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5736544" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5020107" side_tool="true" weight="0.49150142" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3696884" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" />
+      <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run Dashboard" order="19" sideWeight="0.49798927" weight="0.562323" />
+      <window_info anchor="bottom" id="Problems" order="20" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2989276" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Mybatis datasource" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Database" order="9" weight="0.3297587" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28217158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -621,7 +769,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.49787837" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32956153" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33002833" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5020107" side_tool="true" weight="0.49150142" />
@@ -631,7 +779,7 @@
       <window_info anchor="bottom" id="JRebel Executor" order="16" />
       <window_info anchor="bottom" id="JRebel Console" order="17" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="18" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run Dashboard" order="19" sideWeight="0.49798927" weight="0.3937677" />
+      <window_info anchor="bottom" id="Run Dashboard" order="19" sideWeight="0.49798927" weight="0.46175638" />
       <window_info anchor="bottom" id="Problems" order="20" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -644,7 +792,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Database" order="9" weight="0.3297587" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.3297587" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -698,291 +846,392 @@
     <MESSAGE value="添加退出登录功能" />
     <MESSAGE value="完成qq授权登录&#10;实体类实现反序列化&#10;修改页面样式" />
     <MESSAGE value="拆分web端工程。单独分出一支支付端工程。使用nginx做反向代理实现本机跨域请求" />
-    <option name="LAST_COMMIT_MESSAGE" value="拆分web端工程。单独分出一支支付端工程。使用nginx做反向代理实现本机跨域请求" />
+    <MESSAGE value="docker-compose构建eureka集群" />
+    <MESSAGE value="添加功能&#10;1.会员表添加收货地址字段，用户注册时需输入地址信息&#10;2.用户中心添加信息修改功能&#10;3.修改支付成功后的订单更新操作&#10;4.支付成功后库存减少&#10;5.代码优化" />
+    <MESSAGE value="修改支付业务；修改订单有效期为15分钟" />
+    <MESSAGE value="1.拆分mobile-web子系统。分为用户子系统、商城门户子系统、购物车子系统、订单子系统、支付子系统、用户中心子系统。各子系统间通信通过nginx作端口跨域请求&#10;2.添加zuul网关熔断机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.拆分mobile-web子系统。分为用户子系统、商城门户子系统、购物车子系统、订单子系统、支付子系统、用户中心子系统。各子系统间通信通过nginx作端口跨域请求&#10;2.添加zuul网关熔断机制" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SDKConstants.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SDKUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/AcpService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/DemoBase.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SDKConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/SecureUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/LogUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/BaseHttpSSLSocketFactory.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/CertUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/unionpay/acp/sdk/HttpClient.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/pay/impl/PayImplService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay.ftl" />
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay_success.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/static/css/order.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay_fail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/callback/Impl/YinLianCallbackService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/PayWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/load/AutoLoadRunner.java" />
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/load/AutoLoadRunner.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/acp_sdk.properties" />
     <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/acp_sdk.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/pay/YinLianCallbackController.java" />
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/MobileWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentInfoFeign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentTypeFeign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/service/adapter/Impl/YinLianPay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-eureka-8200/src/main/java/com/lpc/eureka8200/Eureka8200Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-commodity/src/main/java/com/lpc/CommodityServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qqconnect.log" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="114">
-            <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/multiThread/ThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-pay/src/main/java/com/lpc/serviceImpl/PaymentInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="262">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-pay-api/src/main/java/pay/service/api/PaymentInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="395">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentTypeFeign.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/src/main/java/order/entity/OrderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="361">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentHystrixFallBack.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="1389">
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/feign/pay/PaymentInfoFeign.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-index-web/src/main/java/com/lpc/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="779">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/base/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-cart-web/src/main/java/com/lpc/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="95">
+            <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/java/com/lpc/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1942">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-message/src/main/java/com/lpc/adapter/adapterImpl/FindPasswordImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/src/main/java/com/lpc/mailBoxProducer/MailBoxProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-member/src/main/java/com/lpc/serviceImpl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1598">
+          <caret line="90" column="15" lean-forward="true" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/java/com/lpc/controller/UserCenterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/java/com/lpc/base/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE-sources.jar!/org/springframework/http/MediaType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="101" column="34" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/java/zuul82/ZuulServer82Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/src/main/java/com/lpc/zuul81/filter/TokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/java/zuul82/filter/TokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="79" selection-end-line="41" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/resources/templates/error.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding>
+            <element signature="e#39#73#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/error.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#39#73#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/resources/templates/error.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="e#39#73#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-index-web/src/main/resources/templates/error.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#39#73#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/pay/PayController.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-cart-web/src/main/resources/templates/error.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="57">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="e#39#62#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-81/src/main/java/com/lpc/zuul81/fallback/ServiceFallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/java/com/lpc/controller/order/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-zuul-82/src/main/java/zuul82/fallback/ServiceFallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-common/src/main/java/com/lpc/utils/CookieUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="72">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/PaymentHystrixFallBack.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/base/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="38">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/YinLianCallbackController.java">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/java/com/lpc/feign/OrderHystrixFallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="376">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/feign/order/OrderHystrixFallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="57" column="46" lean-forward="true" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+          <folding>
+            <element signature="e#1396#1397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/src/main/java/com/lpc/dao/OrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-order/src/main/java/com/lpc/serviceImpl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding>
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2845#2846#0" expanded="true" />
+            <element signature="e#3796#3797#0" expanded="true" />
+            <element signature="e#3851#3852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-api/wechat-mall-order-api/src/main/java/order/service/api/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/controller/PayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="94">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/java/com/lpc/schedule/OrderSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="57">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/java/com/lpc/feign/OrderHystrixFallBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="395">
+          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-cart-web/src/main/resources/templates/cart.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="66" lean-forward="true" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-index-web/src/main/resources/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/associatedAccount.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/login.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/register.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/updatePwd.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/forgotPwd.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-mobile-web/src/main/resources/templates/error.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/resources/templates/pay.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/resources/templates/orderDetail.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-order-web/src/main/resources/templates/myOrder.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay_fail.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-pay-web/src/main/resources/templates/pay_success.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/resources/templates/updateUser.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wechat-Mall-Parent/wechat-mall-web/wechat-mall-usercenter-web/src/main/resources/templates/usercenter.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1039,11 +1288,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>wechat-mall-member</last-edited>
+          <last-edited>wechat-mall-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.403171" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

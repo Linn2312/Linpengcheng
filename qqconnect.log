@@ -1,0 +1,611 @@
+204776 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+204779 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+204780 DEBUG [2020-02-14 21:44:46]  Couldn't find template in cache for "itemDesc.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+204780 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+204781 DEBUG [2020-02-14 21:44:46]  Loading template for "itemDesc.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\itemDesc.ftl"
+204781 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+204781 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+204782 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+204782 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+204782 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+204782 DEBUG [2020-02-14 21:44:46]  Loading template for "itemDesc.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\itemDesc.ftl"
+204782 DEBUG [2020-02-14 21:44:46]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+204782 DEBUG [2020-02-14 21:44:46]  Loading template for "itemDesc.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\itemDesc.ftl"
+204814 DEBUG [2020-02-14 21:44:46]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+204814 DEBUG [2020-02-14 21:44:46]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+204814 DEBUG [2020-02-14 21:44:46]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+212524 DEBUG [2020-02-14 21:44:53]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+212524 DEBUG [2020-02-14 21:44:53]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+212524 DEBUG [2020-02-14 21:44:53]  TemplateLoader.findTemplateSource("index.ftl"): Found
+212524 DEBUG [2020-02-14 21:44:53]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+212524 DEBUG [2020-02-14 21:44:53]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+264472 DEBUG [2020-02-14 21:45:45]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+264472 DEBUG [2020-02-14 21:45:45]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+264473 DEBUG [2020-02-14 21:45:45]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+264473 DEBUG [2020-02-14 21:45:45]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+264473 DEBUG [2020-02-14 21:45:45]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1692609 DEBUG [2020-02-14 22:09:33]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1692610 DEBUG [2020-02-14 22:09:33]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1692610 DEBUG [2020-02-14 22:09:33]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1692611 DEBUG [2020-02-14 22:09:33]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1692611 DEBUG [2020-02-14 22:09:33]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1741277 DEBUG [2020-02-14 22:10:22]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+1741278 DEBUG [2020-02-14 22:10:22]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+1741279 DEBUG [2020-02-14 22:10:22]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+1741279 DEBUG [2020-02-14 22:10:22]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+1741279 DEBUG [2020-02-14 22:10:22]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1774547 DEBUG [2020-02-14 22:10:55]  Couldn't find template in cache for "showmore.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+1774549 DEBUG [2020-02-14 22:10:55]  TemplateLoader.findTemplateSource("showmore_zh_CN.ftl"): Not found
+1774549 DEBUG [2020-02-14 22:10:55]  TemplateLoader.findTemplateSource("showmore_zh.ftl"): Not found
+1774550 DEBUG [2020-02-14 22:10:55]  TemplateLoader.findTemplateSource("showmore.ftl"): Found
+1774550 DEBUG [2020-02-14 22:10:55]  Loading template for "showmore.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\showmore.ftl"
+1774577 DEBUG [2020-02-14 22:10:55]  "showmore.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+0    DEBUG [2020-02-20 14:19:30]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+610  DEBUG [2020-02-20 14:19:31]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+611  DEBUG [2020-02-20 14:19:31]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+613  DEBUG [2020-02-20 14:19:31]  TemplateLoader.findTemplateSource("error.ftl"): Found
+613  DEBUG [2020-02-20 14:19:31]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+1040 DEBUG [2020-02-20 14:19:31]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+40129 DEBUG [2020-02-20 14:20:10]  Couldn't find template in cache for "index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+40132 DEBUG [2020-02-20 14:20:10]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+40132 DEBUG [2020-02-20 14:20:10]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+40133 DEBUG [2020-02-20 14:20:10]  TemplateLoader.findTemplateSource("index.ftl"): Found
+40133 DEBUG [2020-02-20 14:20:10]  Loading template for "index.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\index.ftl"
+40373 DEBUG [2020-02-20 14:20:11]  Couldn't find template in cache for "index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+40382 DEBUG [2020-02-20 14:20:11]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+40383 DEBUG [2020-02-20 14:20:11]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+40383 DEBUG [2020-02-20 14:20:11]  TemplateLoader.findTemplateSource("index.ftl"): Found
+40383 DEBUG [2020-02-20 14:20:11]  Loading template for "index.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\index.ftl"
+41052 DEBUG [2020-02-20 14:20:11]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+41052 DEBUG [2020-02-20 14:20:11]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+60265 DEBUG [2020-02-20 14:20:30]  Couldn't find template in cache for "showmore.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+60266 DEBUG [2020-02-20 14:20:30]  TemplateLoader.findTemplateSource("showmore_zh_CN.ftl"): Not found
+60267 DEBUG [2020-02-20 14:20:30]  TemplateLoader.findTemplateSource("showmore_zh.ftl"): Not found
+60267 DEBUG [2020-02-20 14:20:30]  TemplateLoader.findTemplateSource("showmore.ftl"): Found
+60267 DEBUG [2020-02-20 14:20:30]  Loading template for "showmore.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\showmore.ftl"
+60295 DEBUG [2020-02-20 14:20:31]  "showmore.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+67542 DEBUG [2020-02-20 14:20:38]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+67543 DEBUG [2020-02-20 14:20:38]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+67543 DEBUG [2020-02-20 14:20:38]  TemplateLoader.findTemplateSource("index.ftl"): Found
+67543 DEBUG [2020-02-20 14:20:38]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+67543 DEBUG [2020-02-20 14:20:38]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+82079 DEBUG [2020-02-20 14:20:52]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+82080 DEBUG [2020-02-20 14:20:52]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+82080 DEBUG [2020-02-20 14:20:52]  TemplateLoader.findTemplateSource("error.ftl"): Found
+82080 DEBUG [2020-02-20 14:20:52]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+82080 DEBUG [2020-02-20 14:20:52]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+83458 DEBUG [2020-02-20 14:20:54]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+83459 DEBUG [2020-02-20 14:20:54]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+83459 DEBUG [2020-02-20 14:20:54]  TemplateLoader.findTemplateSource("index.ftl"): Found
+83459 DEBUG [2020-02-20 14:20:54]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+83459 DEBUG [2020-02-20 14:20:54]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+88384 DEBUG [2020-02-20 14:20:59]  Couldn't find template in cache for "usercenter.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+88386 DEBUG [2020-02-20 14:20:59]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+88388 DEBUG [2020-02-20 14:20:59]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+88388 DEBUG [2020-02-20 14:20:59]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+88388 DEBUG [2020-02-20 14:20:59]  Loading template for "usercenter.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\usercenter.ftl"
+88413 DEBUG [2020-02-20 14:20:59]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+98525 DEBUG [2020-02-20 14:21:09]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+98526 DEBUG [2020-02-20 14:21:09]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+98526 DEBUG [2020-02-20 14:21:09]  TemplateLoader.findTemplateSource("index.ftl"): Found
+98526 DEBUG [2020-02-20 14:21:09]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+98526 DEBUG [2020-02-20 14:21:09]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+114701 DEBUG [2020-02-20 14:21:25]  Couldn't find template in cache for "itemDesc.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+114701 DEBUG [2020-02-20 14:21:25]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+114702 DEBUG [2020-02-20 14:21:25]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+114702 DEBUG [2020-02-20 14:21:25]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+114703 DEBUG [2020-02-20 14:21:25]  Loading template for "itemDesc.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\itemDesc.ftl"
+114725 DEBUG [2020-02-20 14:21:25]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+126207 DEBUG [2020-02-20 14:21:36]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+126207 DEBUG [2020-02-20 14:21:36]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+126208 DEBUG [2020-02-20 14:21:36]  TemplateLoader.findTemplateSource("error.ftl"): Found
+126208 DEBUG [2020-02-20 14:21:36]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+126208 DEBUG [2020-02-20 14:21:36]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+132160 DEBUG [2020-02-20 14:21:42]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+132161 DEBUG [2020-02-20 14:21:42]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+132161 DEBUG [2020-02-20 14:21:42]  TemplateLoader.findTemplateSource("index.ftl"): Found
+132161 DEBUG [2020-02-20 14:21:42]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+132161 DEBUG [2020-02-20 14:21:42]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+158550 DEBUG [2020-02-20 14:22:09]  Couldn't find template in cache for "searchResult.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+158552 DEBUG [2020-02-20 14:22:09]  TemplateLoader.findTemplateSource("searchResult_zh_CN.ftl"): Not found
+158554 DEBUG [2020-02-20 14:22:09]  TemplateLoader.findTemplateSource("searchResult_zh.ftl"): Not found
+158555 DEBUG [2020-02-20 14:22:09]  TemplateLoader.findTemplateSource("searchResult.ftl"): Found
+158555 DEBUG [2020-02-20 14:22:09]  Loading template for "searchResult.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\searchResult.ftl"
+158590 DEBUG [2020-02-20 14:22:09]  "searchResult.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+160825 DEBUG [2020-02-20 14:22:11]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+160826 DEBUG [2020-02-20 14:22:11]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+160826 DEBUG [2020-02-20 14:22:11]  TemplateLoader.findTemplateSource("index.ftl"): Found
+160826 DEBUG [2020-02-20 14:22:11]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+160826 DEBUG [2020-02-20 14:22:11]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+172731 DEBUG [2020-02-20 14:22:23]  TemplateLoader.findTemplateSource("searchResult_zh_CN.ftl"): Not found
+172732 DEBUG [2020-02-20 14:22:23]  TemplateLoader.findTemplateSource("searchResult_zh.ftl"): Not found
+172732 DEBUG [2020-02-20 14:22:23]  TemplateLoader.findTemplateSource("searchResult.ftl"): Found
+172732 DEBUG [2020-02-20 14:22:23]  "searchResult.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\searchResult.ftl hasn't changed.
+172732 DEBUG [2020-02-20 14:22:23]  "searchResult.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+186597 DEBUG [2020-02-20 14:22:37]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+186598 DEBUG [2020-02-20 14:22:37]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+186598 DEBUG [2020-02-20 14:22:37]  TemplateLoader.findTemplateSource("index.ftl"): Found
+186598 DEBUG [2020-02-20 14:22:37]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+186599 DEBUG [2020-02-20 14:22:37]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+212354 DEBUG [2020-02-20 14:23:03]  TemplateLoader.findTemplateSource("showmore_zh_CN.ftl"): Not found
+212355 DEBUG [2020-02-20 14:23:03]  TemplateLoader.findTemplateSource("showmore_zh.ftl"): Not found
+212355 DEBUG [2020-02-20 14:23:03]  TemplateLoader.findTemplateSource("showmore.ftl"): Found
+212356 DEBUG [2020-02-20 14:23:03]  "showmore.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\showmore.ftl hasn't changed.
+212356 DEBUG [2020-02-20 14:23:03]  "showmore.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+217658 DEBUG [2020-02-20 14:23:08]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+217658 DEBUG [2020-02-20 14:23:08]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+217658 DEBUG [2020-02-20 14:23:08]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+217658 DEBUG [2020-02-20 14:23:08]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+217659 DEBUG [2020-02-20 14:23:08]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+230618 DEBUG [2020-02-20 14:23:21]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+230619 DEBUG [2020-02-20 14:23:21]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+230619 DEBUG [2020-02-20 14:23:21]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+230619 DEBUG [2020-02-20 14:23:21]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+230619 DEBUG [2020-02-20 14:23:21]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+270999 DEBUG [2020-02-20 14:24:01]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+271000 DEBUG [2020-02-20 14:24:01]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+271001 DEBUG [2020-02-20 14:24:01]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+271001 DEBUG [2020-02-20 14:24:01]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+271001 DEBUG [2020-02-20 14:24:01]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+280723 DEBUG [2020-02-20 14:24:11]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+280724 DEBUG [2020-02-20 14:24:11]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+280724 DEBUG [2020-02-20 14:24:11]  TemplateLoader.findTemplateSource("index.ftl"): Found
+280724 DEBUG [2020-02-20 14:24:11]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+280724 DEBUG [2020-02-20 14:24:11]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+306760 DEBUG [2020-02-20 14:24:37]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+306760 DEBUG [2020-02-20 14:24:37]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+306761 DEBUG [2020-02-20 14:24:37]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+306761 DEBUG [2020-02-20 14:24:37]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+306761 DEBUG [2020-02-20 14:24:37]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+335061 DEBUG [2020-02-20 14:25:05]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+335062 DEBUG [2020-02-20 14:25:05]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+335062 DEBUG [2020-02-20 14:25:05]  TemplateLoader.findTemplateSource("index.ftl"): Found
+335062 DEBUG [2020-02-20 14:25:05]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+335062 DEBUG [2020-02-20 14:25:05]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+348772 DEBUG [2020-02-20 14:25:19]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+348773 DEBUG [2020-02-20 14:25:19]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+348773 DEBUG [2020-02-20 14:25:19]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+348773 DEBUG [2020-02-20 14:25:19]  "usercenter.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\usercenter.ftl hasn't changed.
+348774 DEBUG [2020-02-20 14:25:19]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+350086 DEBUG [2020-02-20 14:25:20]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+350087 DEBUG [2020-02-20 14:25:20]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+350087 DEBUG [2020-02-20 14:25:20]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+350088 DEBUG [2020-02-20 14:25:20]  TemplateLoader.findTemplateSource("login.ftl"): Found
+350088 DEBUG [2020-02-20 14:25:20]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\login.ftl"
+350138 DEBUG [2020-02-20 14:25:20]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+369720 DEBUG [2020-02-20 14:25:40]  Couldn't find template in cache for "associatedAccount.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+369722 DEBUG [2020-02-20 14:25:40]  TemplateLoader.findTemplateSource("associatedAccount_zh_CN.ftl"): Not found
+369724 DEBUG [2020-02-20 14:25:40]  TemplateLoader.findTemplateSource("associatedAccount_zh.ftl"): Not found
+369724 DEBUG [2020-02-20 14:25:40]  TemplateLoader.findTemplateSource("associatedAccount.ftl"): Found
+369724 DEBUG [2020-02-20 14:25:40]  Loading template for "associatedAccount.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\associatedAccount.ftl"
+369754 DEBUG [2020-02-20 14:25:40]  "associatedAccount.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+372504 DEBUG [2020-02-20 14:25:43]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+372504 DEBUG [2020-02-20 14:25:43]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+372504 DEBUG [2020-02-20 14:25:43]  TemplateLoader.findTemplateSource("login.ftl"): Found
+372505 DEBUG [2020-02-20 14:25:43]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+372505 DEBUG [2020-02-20 14:25:43]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+382266 DEBUG [2020-02-20 14:25:52]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+382266 DEBUG [2020-02-20 14:25:52]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+382267 DEBUG [2020-02-20 14:25:52]  TemplateLoader.findTemplateSource("login.ftl"): Found
+382267 DEBUG [2020-02-20 14:25:52]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+382267 DEBUG [2020-02-20 14:25:52]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+399103 DEBUG [2020-02-20 14:26:09]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+399104 DEBUG [2020-02-20 14:26:09]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+399104 DEBUG [2020-02-20 14:26:09]  TemplateLoader.findTemplateSource("login.ftl"): Found
+399105 DEBUG [2020-02-20 14:26:09]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+399105 DEBUG [2020-02-20 14:26:09]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+403087 DEBUG [2020-02-20 14:26:13]  Couldn't find template in cache for "forgotPwd.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+403089 DEBUG [2020-02-20 14:26:13]  TemplateLoader.findTemplateSource("forgotPwd_zh_CN.ftl"): Not found
+403090 DEBUG [2020-02-20 14:26:13]  TemplateLoader.findTemplateSource("forgotPwd_zh.ftl"): Not found
+403090 DEBUG [2020-02-20 14:26:13]  TemplateLoader.findTemplateSource("forgotPwd.ftl"): Found
+403090 DEBUG [2020-02-20 14:26:13]  Loading template for "forgotPwd.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\forgotPwd.ftl"
+403107 DEBUG [2020-02-20 14:26:13]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+415233 DEBUG [2020-02-20 14:26:25]  TemplateLoader.findTemplateSource("forgotPwd_zh_CN.ftl"): Not found
+415234 DEBUG [2020-02-20 14:26:25]  TemplateLoader.findTemplateSource("forgotPwd_zh.ftl"): Not found
+415234 DEBUG [2020-02-20 14:26:25]  TemplateLoader.findTemplateSource("forgotPwd.ftl"): Found
+415234 DEBUG [2020-02-20 14:26:25]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\forgotPwd.ftl hasn't changed.
+415234 DEBUG [2020-02-20 14:26:25]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+449167 DEBUG [2020-02-20 14:26:59]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+449168 DEBUG [2020-02-20 14:26:59]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+449170 DEBUG [2020-02-20 14:26:59]  TemplateLoader.findTemplateSource("login.ftl"): Found
+449170 DEBUG [2020-02-20 14:26:59]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+449170 DEBUG [2020-02-20 14:26:59]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+480255 DEBUG [2020-02-20 14:27:30]  Couldn't find template in cache for "updatePwd.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+480257 DEBUG [2020-02-20 14:27:30]  TemplateLoader.findTemplateSource("updatePwd_zh_CN.ftl"): Not found
+480259 DEBUG [2020-02-20 14:27:30]  TemplateLoader.findTemplateSource("updatePwd_zh.ftl"): Not found
+480260 DEBUG [2020-02-20 14:27:30]  TemplateLoader.findTemplateSource("updatePwd.ftl"): Found
+480260 DEBUG [2020-02-20 14:27:30]  Loading template for "updatePwd.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\updatePwd.ftl"
+480288 DEBUG [2020-02-20 14:27:31]  "updatePwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+499927 DEBUG [2020-02-20 14:27:50]  TemplateLoader.findTemplateSource("updatePwd_zh_CN.ftl"): Not found
+499929 DEBUG [2020-02-20 14:27:50]  TemplateLoader.findTemplateSource("updatePwd_zh.ftl"): Not found
+499929 DEBUG [2020-02-20 14:27:50]  TemplateLoader.findTemplateSource("updatePwd.ftl"): Found
+499929 DEBUG [2020-02-20 14:27:50]  "updatePwd.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\updatePwd.ftl hasn't changed.
+499930 DEBUG [2020-02-20 14:27:50]  "updatePwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+518417 DEBUG [2020-02-20 14:28:09]  TemplateLoader.findTemplateSource("updatePwd_zh_CN.ftl"): Not found
+518418 DEBUG [2020-02-20 14:28:09]  TemplateLoader.findTemplateSource("updatePwd_zh.ftl"): Not found
+518418 DEBUG [2020-02-20 14:28:09]  TemplateLoader.findTemplateSource("updatePwd.ftl"): Found
+518418 DEBUG [2020-02-20 14:28:09]  "updatePwd.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\updatePwd.ftl hasn't changed.
+518418 DEBUG [2020-02-20 14:28:09]  "updatePwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+535563 DEBUG [2020-02-20 14:28:26]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+535563 DEBUG [2020-02-20 14:28:26]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+535564 DEBUG [2020-02-20 14:28:26]  TemplateLoader.findTemplateSource("index.ftl"): Found
+535564 DEBUG [2020-02-20 14:28:26]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+535564 DEBUG [2020-02-20 14:28:26]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+540819 DEBUG [2020-02-20 14:28:31]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+540820 DEBUG [2020-02-20 14:28:31]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+540820 DEBUG [2020-02-20 14:28:31]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+540821 DEBUG [2020-02-20 14:28:31]  "usercenter.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\usercenter.ftl hasn't changed.
+540821 DEBUG [2020-02-20 14:28:31]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+542536 DEBUG [2020-02-20 14:28:33]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+542536 DEBUG [2020-02-20 14:28:33]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+542536 DEBUG [2020-02-20 14:28:33]  TemplateLoader.findTemplateSource("login.ftl"): Found
+542536 DEBUG [2020-02-20 14:28:33]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+542537 DEBUG [2020-02-20 14:28:33]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+546580 DEBUG [2020-02-20 14:28:37]  Couldn't find template in cache for "register.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+546581 DEBUG [2020-02-20 14:28:37]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+546582 DEBUG [2020-02-20 14:28:37]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+546582 DEBUG [2020-02-20 14:28:37]  TemplateLoader.findTemplateSource("register.ftl"): Found
+546582 DEBUG [2020-02-20 14:28:37]  Loading template for "register.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\register.ftl"
+546606 DEBUG [2020-02-20 14:28:37]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+596081 DEBUG [2020-02-20 14:29:26]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+596082 DEBUG [2020-02-20 14:29:26]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+596083 DEBUG [2020-02-20 14:29:26]  TemplateLoader.findTemplateSource("register.ftl"): Found
+596083 DEBUG [2020-02-20 14:29:26]  "register.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\register.ftl hasn't changed.
+596083 DEBUG [2020-02-20 14:29:26]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+782056 DEBUG [2020-02-20 14:32:32]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+782058 DEBUG [2020-02-20 14:32:32]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+782060 DEBUG [2020-02-20 14:32:32]  TemplateLoader.findTemplateSource("login.ftl"): Found
+782060 DEBUG [2020-02-20 14:32:32]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+782060 DEBUG [2020-02-20 14:32:32]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+795786 DEBUG [2020-02-20 14:32:46]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+795786 DEBUG [2020-02-20 14:32:46]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+795787 DEBUG [2020-02-20 14:32:46]  TemplateLoader.findTemplateSource("index.ftl"): Found
+795787 DEBUG [2020-02-20 14:32:46]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+795787 DEBUG [2020-02-20 14:32:46]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+806599 DEBUG [2020-02-20 14:32:57]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+806599 DEBUG [2020-02-20 14:32:57]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+806599 DEBUG [2020-02-20 14:32:57]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+806600 DEBUG [2020-02-20 14:32:57]  "usercenter.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\usercenter.ftl hasn't changed.
+806601 DEBUG [2020-02-20 14:32:57]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+816173 DEBUG [2020-02-20 14:33:06]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+816174 DEBUG [2020-02-20 14:33:06]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+816175 DEBUG [2020-02-20 14:33:06]  TemplateLoader.findTemplateSource("login.ftl"): Found
+816175 DEBUG [2020-02-20 14:33:06]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+816175 DEBUG [2020-02-20 14:33:06]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+912699 DEBUG [2020-02-20 14:34:43]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+912700 DEBUG [2020-02-20 14:34:43]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+912700 DEBUG [2020-02-20 14:34:43]  TemplateLoader.findTemplateSource("index.ftl"): Found
+912700 DEBUG [2020-02-20 14:34:43]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+912700 DEBUG [2020-02-20 14:34:43]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+920798 DEBUG [2020-02-20 14:34:51]  Couldn't find template in cache for "cart.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+920798 DEBUG [2020-02-20 14:34:51]  TemplateLoader.findTemplateSource("cart_zh_CN.ftl"): Not found
+920799 DEBUG [2020-02-20 14:34:51]  TemplateLoader.findTemplateSource("cart_zh.ftl"): Not found
+920799 DEBUG [2020-02-20 14:34:51]  TemplateLoader.findTemplateSource("cart.ftl"): Found
+920799 DEBUG [2020-02-20 14:34:51]  Loading template for "cart.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\cart.ftl"
+920823 DEBUG [2020-02-20 14:34:51]  "cart.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+927956 DEBUG [2020-02-20 14:34:58]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+927957 DEBUG [2020-02-20 14:34:58]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+927957 DEBUG [2020-02-20 14:34:58]  TemplateLoader.findTemplateSource("index.ftl"): Found
+927957 DEBUG [2020-02-20 14:34:58]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+927957 DEBUG [2020-02-20 14:34:58]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+932744 DEBUG [2020-02-20 14:35:03]  TemplateLoader.findTemplateSource("cart_zh_CN.ftl"): Not found
+932744 DEBUG [2020-02-20 14:35:03]  TemplateLoader.findTemplateSource("cart_zh.ftl"): Not found
+932744 DEBUG [2020-02-20 14:35:03]  TemplateLoader.findTemplateSource("cart.ftl"): Found
+932745 DEBUG [2020-02-20 14:35:03]  "cart.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\cart.ftl hasn't changed.
+932745 DEBUG [2020-02-20 14:35:03]  "cart.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+946488 DEBUG [2020-02-20 14:35:17]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+946488 DEBUG [2020-02-20 14:35:17]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+946489 DEBUG [2020-02-20 14:35:17]  TemplateLoader.findTemplateSource("index.ftl"): Found
+946489 DEBUG [2020-02-20 14:35:17]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+946490 DEBUG [2020-02-20 14:35:17]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+998551 DEBUG [2020-02-20 14:36:09]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+998552 DEBUG [2020-02-20 14:36:09]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+998552 DEBUG [2020-02-20 14:36:09]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+998553 DEBUG [2020-02-20 14:36:09]  "usercenter.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\usercenter.ftl hasn't changed.
+998553 DEBUG [2020-02-20 14:36:09]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1003243 DEBUG [2020-02-20 14:36:13]  TemplateLoader.findTemplateSource("cart_zh_CN.ftl"): Not found
+1003244 DEBUG [2020-02-20 14:36:13]  TemplateLoader.findTemplateSource("cart_zh.ftl"): Not found
+1003244 DEBUG [2020-02-20 14:36:13]  TemplateLoader.findTemplateSource("cart.ftl"): Found
+1003244 DEBUG [2020-02-20 14:36:13]  "cart.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\cart.ftl hasn't changed.
+1003244 DEBUG [2020-02-20 14:36:13]  "cart.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1006683 DEBUG [2020-02-20 14:36:17]  Couldn't find template in cache for "myOrder.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+1006683 DEBUG [2020-02-20 14:36:17]  TemplateLoader.findTemplateSource("myOrder_zh_CN.ftl"): Not found
+1006684 DEBUG [2020-02-20 14:36:17]  TemplateLoader.findTemplateSource("myOrder_zh.ftl"): Not found
+1006684 DEBUG [2020-02-20 14:36:17]  TemplateLoader.findTemplateSource("myOrder.ftl"): Found
+1006684 DEBUG [2020-02-20 14:36:17]  Loading template for "myOrder.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\myOrder.ftl"
+1006708 DEBUG [2020-02-20 14:36:17]  "myOrder.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1022295 DEBUG [2020-02-20 14:36:33]  Couldn't find template in cache for "updateUser.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+1022295 DEBUG [2020-02-20 14:36:33]  TemplateLoader.findTemplateSource("updateUser_zh_CN.ftl"): Not found
+1022296 DEBUG [2020-02-20 14:36:33]  TemplateLoader.findTemplateSource("updateUser_zh.ftl"): Not found
+1022296 DEBUG [2020-02-20 14:36:33]  TemplateLoader.findTemplateSource("updateUser.ftl"): Found
+1022296 DEBUG [2020-02-20 14:36:33]  Loading template for "updateUser.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\updateUser.ftl"
+1022340 DEBUG [2020-02-20 14:36:33]  "updateUser.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1044148 DEBUG [2020-02-20 14:36:54]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+1044148 DEBUG [2020-02-20 14:36:54]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+1044148 DEBUG [2020-02-20 14:36:54]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+1044149 DEBUG [2020-02-20 14:36:54]  "usercenter.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\usercenter.ftl hasn't changed.
+1044149 DEBUG [2020-02-20 14:36:54]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1050107 DEBUG [2020-02-20 14:37:00]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1050108 DEBUG [2020-02-20 14:37:00]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1050108 DEBUG [2020-02-20 14:37:00]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1050108 DEBUG [2020-02-20 14:37:00]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1050108 DEBUG [2020-02-20 14:37:00]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1060710 DEBUG [2020-02-20 14:37:11]  TemplateLoader.findTemplateSource("usercenter_zh_CN.ftl"): Not found
+1060718 DEBUG [2020-02-20 14:37:11]  TemplateLoader.findTemplateSource("usercenter_zh.ftl"): Not found
+1060719 DEBUG [2020-02-20 14:37:11]  TemplateLoader.findTemplateSource("usercenter.ftl"): Found
+1060719 DEBUG [2020-02-20 14:37:11]  "usercenter.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\usercenter.ftl hasn't changed.
+1060719 DEBUG [2020-02-20 14:37:11]  "usercenter.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1062361 DEBUG [2020-02-20 14:37:13]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1062362 DEBUG [2020-02-20 14:37:13]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1062362 DEBUG [2020-02-20 14:37:13]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1062362 DEBUG [2020-02-20 14:37:13]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1062362 DEBUG [2020-02-20 14:37:13]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1063385 DEBUG [2020-02-20 14:37:14]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1063385 DEBUG [2020-02-20 14:37:14]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1073491 DEBUG [2020-02-20 14:37:24]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1073491 DEBUG [2020-02-20 14:37:24]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1073492 DEBUG [2020-02-20 14:37:24]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1073492 DEBUG [2020-02-20 14:37:24]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1073492 DEBUG [2020-02-20 14:37:24]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1084674 DEBUG [2020-02-20 14:37:35]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+1084675 DEBUG [2020-02-20 14:37:35]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+1084675 DEBUG [2020-02-20 14:37:35]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+1084675 DEBUG [2020-02-20 14:37:35]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+1084675 DEBUG [2020-02-20 14:37:35]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1110802 DEBUG [2020-02-20 14:38:01]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1110802 DEBUG [2020-02-20 14:38:01]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1110803 DEBUG [2020-02-20 14:38:01]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1110803 DEBUG [2020-02-20 14:38:01]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1110803 DEBUG [2020-02-20 14:38:01]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1134007 DEBUG [2020-02-20 14:38:24]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1134007 DEBUG [2020-02-20 14:38:24]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1134008 DEBUG [2020-02-20 14:38:24]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1134008 DEBUG [2020-02-20 14:38:24]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1134008 DEBUG [2020-02-20 14:38:24]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1164615 DEBUG [2020-02-20 14:38:55]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+1164615 DEBUG [2020-02-20 14:38:55]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+1164616 DEBUG [2020-02-20 14:38:55]  TemplateLoader.findTemplateSource("error.ftl"): Found
+1164616 DEBUG [2020-02-20 14:38:55]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+1164617 DEBUG [2020-02-20 14:38:55]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1173956 DEBUG [2020-02-20 14:39:04]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1173956 DEBUG [2020-02-20 14:39:04]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1173957 DEBUG [2020-02-20 14:39:04]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1173957 DEBUG [2020-02-20 14:39:04]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\index.ftl hasn't changed.
+1173957 DEBUG [2020-02-20 14:39:04]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1180509 DEBUG [2020-02-20 14:39:11]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+1180510 DEBUG [2020-02-20 14:39:11]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+1180510 DEBUG [2020-02-20 14:39:11]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+1180510 DEBUG [2020-02-20 14:39:11]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+1180510 DEBUG [2020-02-20 14:39:11]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1197404 DEBUG [2020-02-20 14:39:28]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+1197405 DEBUG [2020-02-20 14:39:28]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+1197406 DEBUG [2020-02-20 14:39:28]  TemplateLoader.findTemplateSource("error.ftl"): Found
+1197406 DEBUG [2020-02-20 14:39:28]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+1197407 DEBUG [2020-02-20 14:39:28]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1339278 DEBUG [2020-02-20 14:41:50]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+1339279 DEBUG [2020-02-20 14:41:50]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+1339281 DEBUG [2020-02-20 14:41:50]  TemplateLoader.findTemplateSource("error.ftl"): Found
+1339281 DEBUG [2020-02-20 14:41:50]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+1339282 DEBUG [2020-02-20 14:41:50]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1343802 DEBUG [2020-02-20 14:41:54]  TemplateLoader.findTemplateSource("itemDesc_zh_CN.ftl"): Not found
+1343803 DEBUG [2020-02-20 14:41:54]  TemplateLoader.findTemplateSource("itemDesc_zh.ftl"): Not found
+1343803 DEBUG [2020-02-20 14:41:54]  TemplateLoader.findTemplateSource("itemDesc.ftl"): Found
+1343803 DEBUG [2020-02-20 14:41:54]  "itemDesc.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\itemDesc.ftl hasn't changed.
+1343803 DEBUG [2020-02-20 14:41:54]  "itemDesc.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+0    DEBUG [2020-02-22 12:53:25]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+35   DEBUG [2020-02-22 12:53:25]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+41   DEBUG [2020-02-22 12:53:25]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+45   DEBUG [2020-02-22 12:53:25]  TemplateLoader.findTemplateSource("login.ftl"): Found
+47   DEBUG [2020-02-22 12:53:25]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\login.ftl"
+124  DEBUG [2020-02-22 12:53:25]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+25460 DEBUG [2020-02-22 12:53:50]  Couldn't find template in cache for "http://28ii870524.zicp.vip/mobile-web/index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+25462 DEBUG [2020-02-22 12:53:50]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index_zh_CN.ftl"): Not found
+25496 DEBUG [2020-02-22 12:53:50]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index_zh.ftl"): Not found
+25497 DEBUG [2020-02-22 12:53:50]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index.ftl"): Not found
+25524 DEBUG [2020-02-22 12:53:50]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+25525 DEBUG [2020-02-22 12:53:50]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+25526 DEBUG [2020-02-22 12:53:50]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+25526 DEBUG [2020-02-22 12:53:50]  TemplateLoader.findTemplateSource("error.ftl"): Found
+25526 DEBUG [2020-02-22 12:53:50]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+25528 DEBUG [2020-02-22 12:53:50]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+55372 DEBUG [2020-02-22 12:54:20]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+55374 DEBUG [2020-02-22 12:54:20]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+55375 DEBUG [2020-02-22 12:54:20]  TemplateLoader.findTemplateSource("login.ftl"): Found
+55376 DEBUG [2020-02-22 12:54:20]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+55377 DEBUG [2020-02-22 12:54:20]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+65596 DEBUG [2020-02-22 12:54:30]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index_zh_CN.ftl"): Not found
+65597 DEBUG [2020-02-22 12:54:30]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index_zh.ftl"): Not found
+65597 DEBUG [2020-02-22 12:54:30]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index.ftl"): Not found
+65597 DEBUG [2020-02-22 12:54:30]  "http://28ii870524.zicp.vip/mobile-web/index.ftl"("zh_CN", UTF-8, parsed) no source found.
+65609 DEBUG [2020-02-22 12:54:30]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+65610 DEBUG [2020-02-22 12:54:30]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+65610 DEBUG [2020-02-22 12:54:30]  TemplateLoader.findTemplateSource("error.ftl"): Found
+65610 DEBUG [2020-02-22 12:54:30]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+65610 DEBUG [2020-02-22 12:54:30]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+70249 DEBUG [2020-02-22 12:54:35]  Couldn't find template in cache for "forgotPwd.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+70251 DEBUG [2020-02-22 12:54:35]  TemplateLoader.findTemplateSource("forgotPwd_zh_CN.ftl"): Not found
+70252 DEBUG [2020-02-22 12:54:35]  TemplateLoader.findTemplateSource("forgotPwd_zh.ftl"): Not found
+70252 DEBUG [2020-02-22 12:54:35]  TemplateLoader.findTemplateSource("forgotPwd.ftl"): Found
+70252 DEBUG [2020-02-22 12:54:35]  Loading template for "forgotPwd.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\forgotPwd.ftl"
+70279 DEBUG [2020-02-22 12:54:35]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+0    DEBUG [2020-02-22 14:39:28]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+940  DEBUG [2020-02-22 14:39:29]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+942  DEBUG [2020-02-22 14:39:29]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+943  DEBUG [2020-02-22 14:39:29]  TemplateLoader.findTemplateSource("login.ftl"): Found
+944  DEBUG [2020-02-22 14:39:29]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\login.ftl"
+1500 DEBUG [2020-02-22 14:39:30]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+16463 DEBUG [2020-02-22 14:39:45]  Couldn't find template in cache for "http://28ii870524.zicp.vip/mobile-web/index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+16507 DEBUG [2020-02-22 14:39:45]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index_zh_CN.ftl"): Not found
+16508 DEBUG [2020-02-22 14:39:45]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index_zh.ftl"): Not found
+16508 DEBUG [2020-02-22 14:39:45]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/mobile-web/index.ftl"): Not found
+16537 DEBUG [2020-02-22 14:39:45]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+16537 DEBUG [2020-02-22 14:39:45]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+16538 DEBUG [2020-02-22 14:39:45]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+16538 DEBUG [2020-02-22 14:39:45]  TemplateLoader.findTemplateSource("error.ftl"): Found
+16539 DEBUG [2020-02-22 14:39:45]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+16540 DEBUG [2020-02-22 14:39:45]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+462055 DEBUG [2020-02-22 14:47:10]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+462056 DEBUG [2020-02-22 14:47:10]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+462056 DEBUG [2020-02-22 14:47:10]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+462057 DEBUG [2020-02-22 14:47:10]  TemplateLoader.findTemplateSource("error.ftl"): Found
+462057 DEBUG [2020-02-22 14:47:10]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+462060 DEBUG [2020-02-22 14:47:10]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+467198 DEBUG [2020-02-22 14:47:15]  Couldn't find template in cache for "register.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+467199 DEBUG [2020-02-22 14:47:15]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+467200 DEBUG [2020-02-22 14:47:15]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+467200 DEBUG [2020-02-22 14:47:15]  TemplateLoader.findTemplateSource("register.ftl"): Found
+467200 DEBUG [2020-02-22 14:47:15]  Loading template for "register.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\register.ftl"
+467227 DEBUG [2020-02-22 14:47:15]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+470019 DEBUG [2020-02-22 14:47:18]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+470020 DEBUG [2020-02-22 14:47:18]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+470020 DEBUG [2020-02-22 14:47:18]  TemplateLoader.findTemplateSource("error.ftl"): Found
+470020 DEBUG [2020-02-22 14:47:18]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+470021 DEBUG [2020-02-22 14:47:18]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+519729 DEBUG [2020-02-22 14:48:08]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+519730 DEBUG [2020-02-22 14:48:08]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+519731 DEBUG [2020-02-22 14:48:08]  TemplateLoader.findTemplateSource("error.ftl"): Found
+519731 DEBUG [2020-02-22 14:48:08]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+519731 DEBUG [2020-02-22 14:48:08]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+533085 DEBUG [2020-02-22 14:48:21]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+533086 DEBUG [2020-02-22 14:48:21]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+533087 DEBUG [2020-02-22 14:48:21]  TemplateLoader.findTemplateSource("register.ftl"): Found
+533087 DEBUG [2020-02-22 14:48:21]  "register.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\register.ftl hasn't changed.
+533087 DEBUG [2020-02-22 14:48:21]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+579914 DEBUG [2020-02-22 14:49:08]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+579915 DEBUG [2020-02-22 14:49:08]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+579916 DEBUG [2020-02-22 14:49:08]  TemplateLoader.findTemplateSource("error.ftl"): Found
+579916 DEBUG [2020-02-22 14:49:08]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+579916 DEBUG [2020-02-22 14:49:08]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+596118 DEBUG [2020-02-22 14:49:24]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+596119 DEBUG [2020-02-22 14:49:24]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+596119 DEBUG [2020-02-22 14:49:24]  TemplateLoader.findTemplateSource("error.ftl"): Found
+596119 DEBUG [2020-02-22 14:49:24]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+596119 DEBUG [2020-02-22 14:49:24]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+609421 DEBUG [2020-02-22 14:49:38]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+609422 DEBUG [2020-02-22 14:49:38]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+609423 DEBUG [2020-02-22 14:49:38]  TemplateLoader.findTemplateSource("register.ftl"): Found
+609423 DEBUG [2020-02-22 14:49:38]  "register.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\register.ftl hasn't changed.
+609424 DEBUG [2020-02-22 14:49:38]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+691788 DEBUG [2020-02-22 14:51:00]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+691788 DEBUG [2020-02-22 14:51:00]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+691789 DEBUG [2020-02-22 14:51:00]  TemplateLoader.findTemplateSource("error.ftl"): Found
+691789 DEBUG [2020-02-22 14:51:00]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+691789 DEBUG [2020-02-22 14:51:00]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+0    DEBUG [2020-02-22 14:51:41]  Couldn't find template in cache for "register.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+3    DEBUG [2020-02-22 14:51:41]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+4    DEBUG [2020-02-22 14:51:41]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+5    DEBUG [2020-02-22 14:51:41]  TemplateLoader.findTemplateSource("register.ftl"): Found
+6    DEBUG [2020-02-22 14:51:41]  Loading template for "register.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\register.ftl"
+63   DEBUG [2020-02-22 14:51:41]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+3588 DEBUG [2020-02-22 14:51:45]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+3589 DEBUG [2020-02-22 14:51:45]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+3590 DEBUG [2020-02-22 14:51:45]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+3590 DEBUG [2020-02-22 14:51:45]  TemplateLoader.findTemplateSource("login.ftl"): Found
+3590 DEBUG [2020-02-22 14:51:45]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\login.ftl"
+3737 DEBUG [2020-02-22 14:51:45]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+15577 DEBUG [2020-02-22 14:51:57]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+15578 DEBUG [2020-02-22 14:51:57]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+15578 DEBUG [2020-02-22 14:51:57]  TemplateLoader.findTemplateSource("login.ftl"): Found
+15578 DEBUG [2020-02-22 14:51:57]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+15579 DEBUG [2020-02-22 14:51:57]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+29782 DEBUG [2020-02-22 14:52:11]  Couldn't find template in cache for "http://28ii870524.zicp.vip/index-web/index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+29782 DEBUG [2020-02-22 14:52:11]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh_CN.ftl"): Not found
+29783 DEBUG [2020-02-22 14:52:11]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh.ftl"): Not found
+29783 DEBUG [2020-02-22 14:52:11]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index.ftl"): Not found
+29801 DEBUG [2020-02-22 14:52:11]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+29802 DEBUG [2020-02-22 14:52:11]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+29802 DEBUG [2020-02-22 14:52:11]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+29802 DEBUG [2020-02-22 14:52:11]  TemplateLoader.findTemplateSource("error.ftl"): Found
+29802 DEBUG [2020-02-22 14:52:11]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+29803 DEBUG [2020-02-22 14:52:11]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+293031 DEBUG [2020-02-22 14:56:34]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+293032 DEBUG [2020-02-22 14:56:34]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+293033 DEBUG [2020-02-22 14:56:34]  TemplateLoader.findTemplateSource("login.ftl"): Found
+293033 DEBUG [2020-02-22 14:56:34]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+293033 DEBUG [2020-02-22 14:56:34]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+302013 DEBUG [2020-02-22 14:56:43]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh_CN.ftl"): Not found
+302013 DEBUG [2020-02-22 14:56:43]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh.ftl"): Not found
+302013 DEBUG [2020-02-22 14:56:43]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index.ftl"): Not found
+302013 DEBUG [2020-02-22 14:56:43]  "http://28ii870524.zicp.vip/index-web/index.ftl"("zh_CN", UTF-8, parsed) no source found.
+302026 DEBUG [2020-02-22 14:56:43]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+302026 DEBUG [2020-02-22 14:56:43]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+302026 DEBUG [2020-02-22 14:56:43]  TemplateLoader.findTemplateSource("error.ftl"): Found
+302026 DEBUG [2020-02-22 14:56:43]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+302027 DEBUG [2020-02-22 14:56:43]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+492609 DEBUG [2020-02-22 14:59:54]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+492610 DEBUG [2020-02-22 14:59:54]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+492610 DEBUG [2020-02-22 14:59:54]  TemplateLoader.findTemplateSource("login.ftl"): Found
+492611 DEBUG [2020-02-22 14:59:54]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+492611 DEBUG [2020-02-22 14:59:54]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+509763 DEBUG [2020-02-22 15:00:11]  Couldn't find template in cache for "forgotPwd.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+509764 DEBUG [2020-02-22 15:00:11]  TemplateLoader.findTemplateSource("forgotPwd_zh_CN.ftl"): Not found
+509765 DEBUG [2020-02-22 15:00:11]  TemplateLoader.findTemplateSource("forgotPwd_zh.ftl"): Not found
+509765 DEBUG [2020-02-22 15:00:11]  TemplateLoader.findTemplateSource("forgotPwd.ftl"): Found
+509765 DEBUG [2020-02-22 15:00:11]  Loading template for "forgotPwd.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\forgotPwd.ftl"
+509885 DEBUG [2020-02-22 15:00:11]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+523782 DEBUG [2020-02-22 15:00:25]  TemplateLoader.findTemplateSource("forgotPwd_zh_CN.ftl"): Not found
+523782 DEBUG [2020-02-22 15:00:25]  TemplateLoader.findTemplateSource("forgotPwd_zh.ftl"): Not found
+523782 DEBUG [2020-02-22 15:00:25]  TemplateLoader.findTemplateSource("forgotPwd.ftl"): Found
+523782 DEBUG [2020-02-22 15:00:25]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\forgotPwd.ftl hasn't changed.
+523782 DEBUG [2020-02-22 15:00:25]  "forgotPwd.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+539726 DEBUG [2020-02-22 15:00:41]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+539726 DEBUG [2020-02-22 15:00:41]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+539727 DEBUG [2020-02-22 15:00:41]  TemplateLoader.findTemplateSource("error.ftl"): Found
+539727 DEBUG [2020-02-22 15:00:41]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+539727 DEBUG [2020-02-22 15:00:41]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+548932 DEBUG [2020-02-22 15:00:50]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+548933 DEBUG [2020-02-22 15:00:50]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+548933 DEBUG [2020-02-22 15:00:50]  TemplateLoader.findTemplateSource("error.ftl"): Found
+548933 DEBUG [2020-02-22 15:00:50]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+548933 DEBUG [2020-02-22 15:00:50]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+0    DEBUG [2020-02-22 15:14:27]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+42   DEBUG [2020-02-22 15:14:27]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+43   DEBUG [2020-02-22 15:14:27]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+45   DEBUG [2020-02-22 15:14:27]  TemplateLoader.findTemplateSource("login.ftl"): Found
+46   DEBUG [2020-02-22 15:14:27]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\login.ftl"
+260  DEBUG [2020-02-22 15:14:27]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+14480 DEBUG [2020-02-22 15:14:42]  Couldn't find template in cache for "http://28ii870524.zicp.vip/index-web/index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+14482 DEBUG [2020-02-22 15:14:42]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh_CN.ftl"): Not found
+14482 DEBUG [2020-02-22 15:14:42]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh.ftl"): Not found
+14483 DEBUG [2020-02-22 15:14:42]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index.ftl"): Not found
+14501 DEBUG [2020-02-22 15:14:42]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+14502 DEBUG [2020-02-22 15:14:42]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+14503 DEBUG [2020-02-22 15:14:42]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+14503 DEBUG [2020-02-22 15:14:42]  TemplateLoader.findTemplateSource("error.ftl"): Found
+14503 DEBUG [2020-02-22 15:14:42]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+14504 DEBUG [2020-02-22 15:14:42]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+4080048 DEBUG [2020-02-22 16:22:27]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+4080115 DEBUG [2020-02-22 16:22:27]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+4080118 DEBUG [2020-02-22 16:22:27]  TemplateLoader.findTemplateSource("login.ftl"): Found
+4080119 DEBUG [2020-02-22 16:22:27]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+4080146 DEBUG [2020-02-22 16:22:27]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+4096445 DEBUG [2020-02-22 16:22:44]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+4096447 DEBUG [2020-02-22 16:22:44]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+4096447 DEBUG [2020-02-22 16:22:44]  TemplateLoader.findTemplateSource("login.ftl"): Found
+4096448 DEBUG [2020-02-22 16:22:44]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\login.ftl hasn't changed.
+4096448 DEBUG [2020-02-22 16:22:44]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+4108664 DEBUG [2020-02-22 16:22:56]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh_CN.ftl"): Not found
+4108665 DEBUG [2020-02-22 16:22:56]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh.ftl"): Not found
+4108665 DEBUG [2020-02-22 16:22:56]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index.ftl"): Not found
+4108666 DEBUG [2020-02-22 16:22:56]  "http://28ii870524.zicp.vip/index-web/index.ftl"("zh_CN", UTF-8, parsed) no source found.
+4108721 DEBUG [2020-02-22 16:22:56]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+4108722 DEBUG [2020-02-22 16:22:56]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+4108722 DEBUG [2020-02-22 16:22:56]  TemplateLoader.findTemplateSource("error.ftl"): Found
+4108722 DEBUG [2020-02-22 16:22:56]  "error.ftl"("zh_CN", UTF-8, parsed): using cached since F:\Intellij_IDEA\WeChat-Mall\Wechat-Mall-Parent\wechat-mall-web\wechat-mall-mobile-web\target\classes\templates\error.ftl hasn't changed.
+4108722 DEBUG [2020-02-22 16:22:56]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+0    DEBUG [2020-02-22 16:26:05]  Couldn't find template in cache for "http://28ii870524.zicp.vip/index-web/index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+14   DEBUG [2020-02-22 16:26:06]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh_CN.ftl"): Not found
+15   DEBUG [2020-02-22 16:26:06]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index_zh.ftl"): Not found
+16   DEBUG [2020-02-22 16:26:06]  TemplateLoader.findTemplateSource("http://28ii870524.zicp.vip/index-web/index.ftl"): Not found
+91   DEBUG [2020-02-22 16:26:06]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+92   DEBUG [2020-02-22 16:26:06]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+92   DEBUG [2020-02-22 16:26:06]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+120  DEBUG [2020-02-22 16:26:06]  TemplateLoader.findTemplateSource("error.ftl"): Found
+121  DEBUG [2020-02-22 16:26:06]  Loading template for "error.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\error.ftl"
+221  DEBUG [2020-02-22 16:26:06]  "error.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+498919 DEBUG [2020-02-22 16:34:24]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+498921 DEBUG [2020-02-22 16:34:24]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+498921 DEBUG [2020-02-22 16:34:24]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+498921 DEBUG [2020-02-22 16:34:24]  TemplateLoader.findTemplateSource("login.ftl"): Found
+498921 DEBUG [2020-02-22 16:34:24]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "F:\\Intellij_IDEA\\WeChat-Mall\\Wechat-Mall-Parent\\wechat-mall-web\\wechat-mall-mobile-web\\target\\classes\\templates\\login.ftl"
+498951 DEBUG [2020-02-22 16:34:24]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.

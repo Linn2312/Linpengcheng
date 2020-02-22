@@ -33,7 +33,7 @@ public class FindPasswordImpl implements MessageAdapter {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom(sender);   //发送者
         simpleMailMessage.setTo(receiver_email);  //接收者
-        simpleMailMessage.setSubject("微信商城———修改密码");
+        simpleMailMessage.setSubject("修改密码");
         simpleMailMessage.setText("点击链接进行修改密码："+Constants.UPDATEPASSWORD);
         log.info("###注册者邮箱 receiver_email:{}",receiver_email);
         mailSender.send(simpleMailMessage);

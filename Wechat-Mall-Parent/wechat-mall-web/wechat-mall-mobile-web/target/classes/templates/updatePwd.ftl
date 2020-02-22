@@ -88,7 +88,7 @@
                         </div>
                         <div class="enter-area" style="z-index: 20;">
                             <input type="password" name="password" class="enter-item first-enter-item" id="miniUpdate_pwd"
-                                   autocomplete="off" placeholder="密码">
+                                   autocomplete="off" placeholder="新密码">
                         </div>
                         <div class="enter-area" style="z-index: 20;">
                             <input type="password" name="re_password" class="enter-item last-enter-item" id="miniUpdate_re_pwd"

@@ -12,7 +12,6 @@
     <artifactId>wechat-mall-commodity</artifactId>
     <packaging>jar</packaging>
 
-
     <dependencies>
         <!--引入commodity服务接口模块-->
         <dependency>

@@ -50,7 +50,7 @@
         <h2 class="nl-login-title lsrp-appname display-custom-hide" id="lsrp_appName"></h2>
 
         <div class="nl-phone-tip">
-            <div id="message_LOGIN_PHONETIP">输入注册用户时邮箱，稍后几秒钟，我们会往邮箱中发送一条链接，点击链接用于修改您的密码</div>
+            <div id="message_LOGIN_PHONETIP">输入注册账户时的邮箱，稍后几秒钟，我们会往邮箱中发送一条链接，用于修改您的密码</div>
             <div id="select_country_code">帮助</div>
         </div>
 
