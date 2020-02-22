@@ -24,5 +24,5 @@ public interface Constants {
     //支付失败
     String PAY_FAIL = "fail";
     //用户点击邮箱中的链接进行修改密码
-    String UPDATEPASSWORD = "http://28ii870524.zicp.vip/mobile-web/toUpdatePwd";
+    String UPDATEPASSWORD = "http://28ii870524.zicp.vip/user-web/toUpdatePwd";
 }

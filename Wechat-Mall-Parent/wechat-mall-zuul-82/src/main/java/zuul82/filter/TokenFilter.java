@@ -1,6 +1,7 @@
 package zuul82.filter;
 
 import com.netflix.zuul.ZuulFilter;
+import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -36,6 +37,9 @@ public class TokenFilter extends ZuulFilter {
     // 编写过滤器拦截业务的代码
     @Override
     public Object run() throws ZuulException {
+        RequestContext requestContext = RequestContext.getCurrentContext();
+        requestContext.getResponse().setCharacterEncoding("UTF-8");
+        requestContext.getResponse().setContentType("text/html;charset=UTF-8");
         System.out.println("网关端口号是："+port);
         return null;
     }

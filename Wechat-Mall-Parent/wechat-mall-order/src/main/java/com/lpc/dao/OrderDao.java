@@ -43,7 +43,7 @@ public interface OrderDao extends BaseDao {
     @Select("select status from order_info where id = #{orderId}")
     Byte getOrderStatus(@Param("orderId") Long orderId);
 
-    @Select("select * from order_info")
+    @Select("select * from order_info where status = 0")
     List<OrderInfo> selectAllOrders();
 
     @Update("update order_info set status = #{status},updatedTime = #{updatedTime} where id = #{id}")

@@ -1,5 +1,5 @@
 server:
-  port: 8011
+  port: 8050
   servlet:
     context-path: /pay-web
 eureka:

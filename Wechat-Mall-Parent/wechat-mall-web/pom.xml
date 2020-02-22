@@ -13,10 +13,11 @@
     <artifactId>wechat-mall-web</artifactId>
 
     <modules>
-        <module>wechat-mall-mobile-web</module>
         <module>wechat-mall-pay-web</module>
+        <module>wechat-mall-index-web</module>
+        <module>wechat-mall-cart-web</module>
+        <module>wechat-mall-order-web</module>
+        <module>wechat-mall-usercenter-web</module>
+        <module>wechat-mall-mobile-web</module>
     </modules>
-
-
-
 </project>

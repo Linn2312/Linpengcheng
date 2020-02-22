@@ -1,0 +1,44 @@
+server:
+  port: 8010
+  servlet:
+    context-path: /index-web
+eureka:
+  client:
+    service-url:
+      ##当前H5工程服务注册到eureka服务的地址
+      defaultZone: http://127.0.0.1:8100/eureka/,http://127.0.0.1:8200/eureka/
+      ##需要将服务注册到注册中心
+      register-with-eureka: true
+      ##需要检索服务
+      fetch-registry: true
+spring:
+  freemarker:
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+    content-type: text/html
+    charset: UTF-8
+  resources:
+    static-locations: classpath:/static/
+  application:
+    name: index-web
+  ##允许多个feign使用同一个服务名
+  main:
+    allow-bean-definition-overriding: true
+
+##设置ribbon超时时间为6秒 默认是1秒
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+###开启断路器
+feign:
+  hystrix:
+    enabled: true
+# 设置hystrix的超时时间为5s
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

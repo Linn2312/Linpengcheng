@@ -1,12 +1,10 @@
 package order.service.api;
 
 import order.entity.OrderInfo;
-import order.entity.OrderVo;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.sql.Timestamp;
 import java.util.List;
 import java.util.Map;
 
@@ -20,7 +18,7 @@ public interface OrderService {
     /**
      * 添加订单信息
      * 根据用户id和总金额
-     * 有效期10分钟 如果付了款 则永久保留
+     * 有效期15分钟 如果付了款 则永久保留
      */
     @RequestMapping("/addOrderInfo")
     Map<String,Object> addOrderInfo(@RequestParam("userId")Long userId,@RequestParam("amount")Double amount);
@@ -77,7 +75,7 @@ public interface OrderService {
     Byte getOrderStatus(@RequestParam("orderId")Long orderId);
 
     /**
-     * 查询所有结算订单信息
+     * 查询该用户所有未付款订单信息
      */
     @RequestMapping("/selectAllOrders")
     List<OrderInfo> selectAllOrders();

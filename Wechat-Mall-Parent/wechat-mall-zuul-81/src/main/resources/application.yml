@@ -12,18 +12,50 @@ spring:
     name: service-zuul
 zuul:
   routes:
-    #mobile-web工程网关配置
+    #index-web工程网关配置
     api-a:
+      path: /index-web/**  #访问只要是/index-web/ 开头的直接转发到index-web服务
+      service-id: index-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
+    #mobile-web工程网关配置
+    api-b:
       path: /mobile-web/**  #访问只要是/mobile-web/ 开头的直接转发到mobile-web服务
       service-id: mobile-web
       strip-prefix: false
       ##忽略敏感信息 置空 防止丢失cookie
       sensitive-headers:
       custom-sensitive-headers: true
+    #cart-web工程网关配置
+    api-c:
+      path: /cart-web/**  #访问只要是/cart-web/ 开头的直接转发到cart-web服务
+      service-id: cart-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
+    #order-web工程网关配置
+    api-d:
+      path: /order-web/**  #访问只要是/order-web/ 开头的直接转发到order-web服务
+      service-id: order-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
     #pay-web工程网关配置
-    api-b:
+    api-e:
       path: /pay-web/**  #访问只要是/pay-web/ 开头的直接转发到pay-web服务
       service-id: pay-web
+      strip-prefix: false
+      ##忽略敏感信息 置空 防止丢失cookie
+      sensitive-headers:
+      custom-sensitive-headers: true
+    #usercenter-web工程网关配置
+    api-f:
+      path: /usercenter-web/**  #访问只要是/usercenter-web/ 开头的直接转发到usercenter-web服务
+      service-id: usercenter-web
       strip-prefix: false
       ##忽略敏感信息 置空 防止丢失cookie
       sensitive-headers:

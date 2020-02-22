@@ -10,37 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>wechat-mall-mobile-web</artifactId>
-    <packaging>jar</packaging>
 
     <dependencies>
-        <!--引入commodity服务接口模块-->
-        <dependency>
-            <groupId>com.lpc</groupId>
-            <artifactId>wechat-mall-commodity-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <!--引入member服务接口模块-->
         <dependency>
             <groupId>com.lpc</groupId>
             <artifactId>wechat-mall-member-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!--引入cart服务接口模块-->
-        <dependency>
-            <groupId>com.lpc</groupId>
-            <artifactId>wechat-mall-cart-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!--引入order服务接口模块-->
-        <dependency>
-            <groupId>com.lpc</groupId>
-            <artifactId>wechat-mall-order-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!--引入pay服务接口模块-->
-        <dependency>
-            <groupId>com.lpc</groupId>
-            <artifactId>wechat-mall-pay-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--引入qq授权sdk4j-->
@@ -49,12 +24,5 @@
             <artifactId>sdk4j</artifactId>
             <version>1.0</version>
         </dependency>
-        <!--servlet依赖-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
-
 </project>

@@ -5,8 +5,6 @@ import com.lpc.redisConfig.BaseRedisService;
 import com.lpc.responseConfig.BaseResponseService;
 import com.lpc.utils.DateUtils;
 import com.lpc.utils.TokenUtils;
-import order.entity.OrderDetail;
-import order.entity.OrderInfo;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
