@@ -1,9 +1,9 @@
 package com.lpc.controller;
 
-import com.lpc.base.BaseController;
 import com.lpc.constants.BaseResponseConstants;
 import com.lpc.feign.ItemDescFeign;
 import com.lpc.feign.ItemFeign;
+import com.lpc.utils.ControllerUtils;
 import com.lpc.utils.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import java.util.Map;
  */
 @Slf4j
 @Controller
-public class ItemDescController extends BaseController {
+public class ItemDescController {
 	private static final String ERROR = "error";
 	private static final String ITEMDESC = "itemDesc";
 	@Autowired
@@ -36,7 +36,7 @@ public class ItemDescController extends BaseController {
 		//根据id查询商品信息
 		Map<String, Object> resultItem = itemFeign.getItem(id);
 		if (resultItem.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-			return super.setError(request,(String)resultItem.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
+			return ControllerUtils.setError(request,(String)resultItem.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
 		}
 		Map<String, Object> item = (Map<String, Object>) ResultUtils.getResultMap(resultItem);
 		request.setAttribute("item", item);
@@ -44,7 +44,7 @@ public class ItemDescController extends BaseController {
 		//根据id查询商品描述 商品id和商品详情id是一一对应的
 		Map<String, Object> resultItemDesc = itemDescFeign.getItemDesc(id);
 		if (resultItemDesc.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-			return super.setError(request,(String)resultItemDesc.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
+			return ControllerUtils.setError(request,(String)resultItemDesc.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
 		}
 		Map<String, Object> itemDesc = (Map<String, Object>) ResultUtils.getResultMap(resultItemDesc);
 		request.setAttribute("itemDesc", itemDesc);

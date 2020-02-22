@@ -1,7 +1,7 @@
 package com.lpc.controller;
 
-import com.lpc.base.BaseController;
 import com.lpc.feign.ItemFeign;
+import com.lpc.utils.ControllerUtils;
 import commodity.entity.Item;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.Map;
 
 @Slf4j
 @Controller
-public class IndexController extends BaseController {
+public class IndexController{
 	private static final String INDEX = "index";
 	private static final String ERROR = "error";
 	private static final String SHOWMORE = "showmore";
@@ -31,11 +31,11 @@ public class IndexController extends BaseController {
 		if ("1".equals(more)){
 			//说明是点击查看更多
 			Map<String, Object> allItems = itemFeign.getAllItems();
-			return super.get(request,allItems,SHOWMORE,ERROR);
+			return ControllerUtils.get(request,allItems,SHOWMORE,ERROR);
 		}
 		// 商城首页 只显示数据库中前两种类型的商品 封装成map 返回给页面
 		Map<String, Object> resultMapItem = itemFeign.getItems();
-		return super.get(request,resultMapItem,INDEX,ERROR);
+		return ControllerUtils.get(request,resultMapItem,INDEX,ERROR);
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class IndexController extends BaseController {
 	@RequestMapping("/moreParts")
 	public String moreParts(HttpServletRequest request){
 		Map<String, Object> allParts = itemFeign.getAllParts();
-		return super.get(request,allParts,SHOWMORE,ERROR);
+		return ControllerUtils.get(request,allParts,SHOWMORE,ERROR);
 	}
 
 	/**

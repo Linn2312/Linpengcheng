@@ -1,6 +1,5 @@
 package com.lpc.schedule;
 
-import com.lpc.base.BaseController;
 import com.lpc.feign.order.OrderFeign;
 import com.lpc.feign.pay.PaymentInfoFeign;
 import com.lpc.utils.DateUtils;
@@ -23,7 +22,7 @@ import java.util.List;
  */
 @Component
 @Slf4j
-public class OrderSchedule extends BaseController {
+public class OrderSchedule {
     @Autowired
     private OrderFeign orderFeign;
     @Autowired

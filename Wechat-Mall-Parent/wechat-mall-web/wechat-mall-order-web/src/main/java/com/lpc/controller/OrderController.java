@@ -6,6 +6,7 @@ import com.lpc.constants.BaseResponseConstants;
 import com.lpc.constants.Constants;
 import com.lpc.feign.ItemFeign;
 import com.lpc.feign.OrderFeign;
+import com.lpc.utils.ControllerUtils;
 import com.lpc.utils.CookieUtil;
 import com.lpc.utils.DateUtils;
 import commodity.entity.Item;
@@ -57,24 +58,24 @@ public class OrderController extends BaseController {
         String token = CookieUtil.getUid(request, Constants.USER_TOKEN);
         mb_user mb_user = super.getUserInfo(token);
         if (mb_user==null){
-            return super.setError(request, "系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request, "系统正忙，请稍后再试",ERROR);
         }
         Long userId = mb_user.getId();
         //生成订单信息
         Map<String, Object> map1 = orderFeign.addOrderInfo(userId, amount);
         if (map1.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-            return super.setError(request,(String) map1.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
+            return ControllerUtils.setError(request,(String) map1.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
         }
         //立马获取刚才生成的订单id
         Long orderId = Long.parseLong(String.valueOf(map1.get(BaseResponseConstants.HTTP_RESP_CODE_DATA)));
         if (map1.get(BaseResponseConstants.HTTP_RESP_CODE_NAME) == BaseResponseConstants.HTTP_RESP_CODE_200){
-            return super.setError(request,"订单创建失败，请稍后重试",ERROR);
+            return ControllerUtils.setError(request,"订单创建失败，请稍后重试",ERROR);
         }
 
         //获取购物车选择的商品信息 用于显示到订单详情页面
         List<Item> list = itemFeign.selectItemsByIds(itemIds);
         if (list==null){
-            return super.setError(request,"系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request,"系统正忙，请稍后再试",ERROR);
         }
         Byte orderStatus = 0;
         for (int i = 0; i < list.size(); i++) {
@@ -84,7 +85,7 @@ public class OrderController extends BaseController {
             //依次生成订单详情
             Map<String, Object> map = orderFeign.addOrderDetail(orderId, itemIds.get(i), shoppingnums.get(i));
             if (map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-                return super.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
+                return ControllerUtils.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
             }
         }
         request.setAttribute("amount",amount);
@@ -96,11 +97,11 @@ public class OrderController extends BaseController {
 
     @RequestMapping("/cancelOrder")
     public String cancelOrder(HttpServletRequest request,@RequestParam("orderId")String id){
-        String orderId = super.convertToNumber(id);
+        String orderId = ControllerUtils.convertToNumber(id);
         Long Oid = Long.parseLong(orderId);
         Map<String, Object> map = orderFeign.cancelOrder(Oid);
         if (map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-            return super.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
+            return ControllerUtils.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
         }
         return "redirect:http://28ii870524.zicp.vip/cart-web/selectCart";
     }
@@ -108,12 +109,12 @@ public class OrderController extends BaseController {
     @RequestMapping("/toOrderDetail")
     public String toOrderDetail(HttpServletRequest request,@RequestParam("orderId") String id,
                                 @RequestParam("amount")String amount,@RequestParam("createdTime")String createdTime){
-        String orderId = super.convertToNumber(id);
+        String orderId = ControllerUtils.convertToNumber(id);
         List<Item> list = this.getItemsIdByOrderId(Long.parseLong(orderId));
         if (list==null){
-            return super.setError(request,"系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request,"系统正忙，请稍后再试",ERROR);
         }
-        request.setAttribute("amount",super.convertToNumber(amount));
+        request.setAttribute("amount",ControllerUtils.convertToNumber(amount));
         request.setAttribute("listOrder",list);
         request.setAttribute("createdTime",createdTime);
         request.setAttribute("orderId",orderId);
@@ -125,12 +126,12 @@ public class OrderController extends BaseController {
                              @RequestParam("orderId") String id,
                              @RequestParam("amount") String amount){
         //总价钱 订单id 货币形式转为数字形式
-        Long totalPrice = Long.parseLong(super.convertToNumber(amount));
-        String orderId = super.convertToNumber(id);
+        Long totalPrice = Long.parseLong(ControllerUtils.convertToNumber(amount));
+        String orderId = ControllerUtils.convertToNumber(id);
         //商品的信息、购买数量   先查订单中商品的id，再根据商品id查商品信息
         List<Item> itemList = this.getItemsIdByOrderId(Long.parseLong(orderId));
         if (itemList==null){
-            return super.setError(request,"系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request,"系统正忙，请稍后再试",ERROR);
         }
         //查询买家的信息 姓名手机号地址
         String token = CookieUtil.getUid(request, Constants.USER_TOKEN);
@@ -149,11 +150,11 @@ public class OrderController extends BaseController {
         String token = CookieUtil.getUid(request,Constants.USER_TOKEN);
         mb_user mb_user = super.getUserInfo(token);
         if (mb_user==null){
-            return super.setError(request, "系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request, "系统正忙，请稍后再试",ERROR);
         }
         List<OrderInfo> listAll = orderFeign.selectUserAllOrder(mb_user.getId());
         if (listAll==null){
-            return super.setError(request,"系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request,"系统正忙，请稍后再试",ERROR);
         }
         List<OrderInfo> listPay = new ArrayList<>();
         List<OrderInfo> listNoPay = new ArrayList<>();

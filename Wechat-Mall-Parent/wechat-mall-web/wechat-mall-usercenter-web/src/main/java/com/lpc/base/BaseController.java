@@ -35,12 +35,4 @@ public class BaseController extends BaseResponseService {
         mb_user mb_user = new JSONObject().parseObject(data, member.entity.mb_user.class);
         return mb_user;
     }
-
-    /**
-     * 设置统一的错误响应方法
-     */
-    protected String setError(HttpServletRequest request, String msg, String location){
-        request.setAttribute("error",msg);
-        return location;
-    }
 }

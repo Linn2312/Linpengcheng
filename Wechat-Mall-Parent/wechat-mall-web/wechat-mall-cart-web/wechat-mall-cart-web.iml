@@ -29,7 +29,6 @@
     <orderEntry type="module" module-name="wechat-mall-common" />
     <orderEntry type="module" module-name="wechat-mall-member-api" />
     <orderEntry type="module" module-name="wechat-mall-cart-api" />
-    <orderEntry type="module" module-name="wechat-mall-order-api" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter:2.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:2.2.0.RELEASE" level="project" />

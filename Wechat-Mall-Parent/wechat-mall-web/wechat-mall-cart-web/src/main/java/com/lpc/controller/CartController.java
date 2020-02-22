@@ -5,6 +5,7 @@ import com.lpc.base.BaseController;
 import com.lpc.constants.Constants;
 import com.lpc.feign.CartFeign;
 import com.lpc.feign.ItemFeign;
+import com.lpc.utils.ControllerUtils;
 import com.lpc.utils.CookieUtil;
 import lombok.extern.slf4j.Slf4j;
 import member.entity.mb_user;
@@ -37,15 +38,15 @@ public class CartController extends BaseController {
     public String selectCart(HttpServletRequest request){
         String token = CookieUtil.getUid(request, Constants.USER_TOKEN);
         if (StringUtils.isEmpty(token)) {
-            return super.setError(request,"您没有登录,请先登录后,才可以查询购物车.",ERROR);
+            return ControllerUtils.setError(request,"您没有登录,请先登录后,才可以查询购物车.",ERROR);
         }
         mb_user mb_user = super.getUserInfo(token);
         if (mb_user==null){
-            return super.setError(request, "系统正忙，请稍后再试",ERROR);
+            return ControllerUtils.setError(request, "系统正忙，请稍后再试",ERROR);
         }
         //查询购物车中的商品信息
         Map<String, Object> map = cartFeign.selectCart(mb_user.getId().toString());
-        return super.get(request,map,CART,ERROR);
+        return ControllerUtils.get(request,map,CART,ERROR);
     }
 
     /**

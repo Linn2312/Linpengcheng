@@ -30,11 +30,5 @@
             <artifactId>wechat-mall-commodity-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--引入pay服务接口模块-->
-        <dependency>
-            <groupId>com.lpc</groupId>
-            <artifactId>wechat-mall-pay-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 </project>

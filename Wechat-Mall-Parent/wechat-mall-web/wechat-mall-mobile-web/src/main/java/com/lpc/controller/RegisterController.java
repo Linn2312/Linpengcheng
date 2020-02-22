@@ -1,9 +1,9 @@
 package com.lpc.controller;
 
-import com.lpc.base.BaseController;
 import com.lpc.constants.BaseResponseConstants;
 import com.lpc.constants.Constants;
 import com.lpc.feign.UserFeign;
+import com.lpc.utils.ControllerUtils;
 import member.entity.mb_user;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import java.util.Map;
  * @Date 2019/12/12
  */
 @Controller
-public class RegisterController extends BaseController {
+public class RegisterController {
     private static final String LOGIN = "login";
     private static final String REGISTER = "register";
     @Autowired
@@ -47,7 +47,7 @@ public class RegisterController extends BaseController {
         //如果注册没成功
         if (!map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_200)) {
             String msg = (String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG);
-            return super.setError(request,msg,REGISTER);
+            return ControllerUtils.setError(request,msg,REGISTER);
         }
         //注册成功 清除session中的openID 防止重复使用
         if (!StringUtils.isEmpty(openID)){

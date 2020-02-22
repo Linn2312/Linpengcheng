@@ -1,9 +1,9 @@
 package com.lpc.controller;
 
-import com.lpc.base.BaseController;
 import com.lpc.constants.BaseResponseConstants;
 import com.lpc.constants.Constants;
 import com.lpc.feign.UserFeign;
+import com.lpc.utils.ControllerUtils;
 import com.lpc.utils.CookieUtil;
 import com.lpc.utils.ResultUtils;
 import com.qq.connect.QQConnectException;
@@ -28,7 +28,7 @@ import java.util.Map;
  */
 @Controller
 @Slf4j
-public class LoginController extends BaseController {
+public class LoginController {
     private static final String LOGIN = "login";
     private static final String ERROR = "error";
     private static final String ASSOCIATEDACCOUNT = "associatedAccount";
@@ -60,7 +60,7 @@ public class LoginController extends BaseController {
         //判断是否登录成功
         String token = (String)ResultUtils.getResultMap(map);
         if (StringUtils.isEmpty(token)){
-            return super.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),LOGIN);
+            return ControllerUtils.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),LOGIN);
         }
         //登录成功后，将token存入cookie中  如果是qq授权登录则需要清除session中的openID
         CookieUtil.addCookie(response, Constants.USER_TOKEN,token, Constants.WEB_USER_COOKIE_MAX_AGE);
@@ -99,7 +99,7 @@ public class LoginController extends BaseController {
         AccessToken accessTokenObj = (new Oauth()).getAccessTokenByRequest(request);
         String accessToken = accessTokenObj.getAccessToken();
         if (StringUtils.isEmpty(accessToken)){
-            return super.setError(request,"获取accessToken为空，QQ授权失败!",ERROR);
+            return ControllerUtils.setError(request,"获取accessToken为空，QQ授权失败!",ERROR);
         }
         OpenID openIDObj = new OpenID(accessToken);
         String openID = openIDObj.getUserOpenID();
@@ -134,7 +134,7 @@ public class LoginController extends BaseController {
     public String findPassword(HttpServletRequest request,@RequestParam("email")String email){
         Map<String, Object> map = userFeign.findPassword(email);
         if (map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_500)){
-            return super.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
+            return ControllerUtils.setError(request,(String) map.get(BaseResponseConstants.HTTP_RESP_CODE_MSG),ERROR);
         }
         request.setAttribute("error","稍后几秒钟，链接将发往您的邮箱");
         return LOGIN;
@@ -155,7 +155,7 @@ public class LoginController extends BaseController {
     public String updatePwd(HttpServletRequest request,@RequestParam("phone")String phone,@RequestParam("password")String password){
         Map<String, Object> map = userFeign.updatePwd(phone, password);
         if (!map.get(BaseResponseConstants.HTTP_RESP_CODE_NAME).equals(BaseResponseConstants.HTTP_RESP_CODE_200)){
-            return super.setError(request,"手机号不存在",UPDATEPWD);
+            return ControllerUtils.setError(request,"手机号不存在",UPDATEPWD);
         }
         request.setAttribute("error","修改成功，请重新登录");
         return LOGIN;
