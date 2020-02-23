@@ -19,7 +19,7 @@
         $(document).ready(function(){
             $("#message_REGISTER_IMMEDIATELY").click(function(){
                 if(validate()){
-                    $("#miniRegister").attr("action","register");
+                    $("#miniRegister").attr("action","updateUser");
                     $("#miniRegister").submit();
                 }
             });
@@ -46,13 +46,6 @@
                 alert("手机号码格式不正确");
                 return false;
             }
-            //密码：密码格式为6-20位字符，数字、字母、特殊字符（除空格）的任意组合
-            var pwd_pattern = /^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{6,20}$/;
-            var password = $("#miniRegister_pwd").val();
-            if (!(pwd_pattern.test(password))){
-                alert("密码格式为6-20位字符，数字、字母、特殊字符（除空格）的任意组合");
-                return false;
-            }
             //地址格式
             var add_pattern = /.*(省|自治区|市).*(市).*(县|区)/;
             var address = $("#miniRegister_address").val();
@@ -61,6 +54,9 @@
                 return false;
             }
             return true;
+        }
+        function noClick() {
+            alert("提示：修改密码请到登录页面点击忘记密码")
         }
     </script>
 </head>
@@ -74,19 +70,16 @@
         </div>
 
         <h1 class="nl-login-title" id="custom_display_256">
-            <span id="message_LOGIN_TITLE">注册微信商城账户</span>
+            <span id="message_LOGIN_TITLE">修改账户信息</span>
         </h1>
         <h2 class="nl-login-title lsrp-appname display-custom-hide"
             id="lsrp_appName"></h2>
 
-        <div class="nl-phone-tip">
-            <div id="message_LOGIN_PHONETIP">目前暂支持中国大陆手机号，请务必填写正确</div>
-            <div id="select_country_code">帮助</div>
-        </div>
 
         <div class="nl-frame-container">
             <div class="ng-form-area show-place" id="form-area">
                 <form method="post" id="miniRegister">
+                    <input type="hidden" id="id" value="${id}">
                     <div class="shake-area" id="shake_area" style="z-index: 30;">
                         <div class="enter-area display-custom-hide" id="revalidate_user">
                             <p class="revalidate-user-name" id="revalidate_user_name"></p>
@@ -94,13 +87,13 @@
                         <div class="enter-area" id="enter_user">
                             <input type="text" class="enter-item first-enter-item"
                                    id="miniRegister_username" name="username"
-                                   autocomplete="off" placeholder="用户名称">
+                                   autocomplete="off" placeholder="用户名称" value="${username}">
                         </div>
                         <div class="enter-area" id="enter_user">
                             <input type="text" name="email"
                                    class="enter-item last-enter-item"
                                    id="miniRegister_email" autocomplete="off"
-                                   placeholder="邮&nbsp;&nbsp;&nbsp;&nbsp;箱">
+                                   placeholder="邮&nbsp;&nbsp;&nbsp;&nbsp;箱" value="${email}">
                         </div>
                     </div>
 
@@ -112,12 +105,12 @@
                             <input type="text" name="phone"
                                    class="enter-item first-enter-item"
                                    id="miniRegister_phone" autocomplete="off"
-                                   placeholder="手机号码">
+                                   placeholder="手机号码" value="${phone}">
                         </div>
-                        <div class="enter-area" style="z-index: 20;">
+                        <div class="enter-area" style="z-index: 20;" onclick="noClick()">
                             <input type="password" class="enter-item last-enter-item"
                                    id="miniRegister_pwd" name="password" autocomplete="off"
-                                   placeholder="密码">
+                                   placeholder="密码" value="${password}" readonly="readonly">
                         </div>
                     </div>
 
@@ -129,18 +122,10 @@
                             <input type="text" name="address"
                                    class="enter-item first-enter-item"
                                    id="miniRegister_address" autocomplete="off"
-                                   placeholder="收货地址：省（自治区、直辖市）-市-区（县、县级市）">
+                                   placeholder="收货地址：省（自治区、直辖市）-市-区（县、县级市）" value="${address}">
                         </div>
                     </div>
-
-                    <#if error??>
-                        <div>
-							<span id="message_LOGIN_TOO_MUCH" style="color: red">
-								${error}
-                            </span>
-                        </div>
-                    </#if>
-                    <input class="button orange" type="button" id="message_REGISTER_IMMEDIATELY" value="立即注册">
+                    <input class="button orange" type="button" id="message_REGISTER_IMMEDIATELY" value="点击修改">
                 </form>
 
             </div>
