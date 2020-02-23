@@ -36,7 +36,7 @@
      &emsp;|--wechat-shop-order(服务层：订单服务的实现          端口号8004)<br>
      &emsp;|--wechat-shop-pay(服务层：支付服务的实现            端口号8005  redis 6382)<br>
      &emsp;|--wechat-shop-web(表现层父工程)<br>
- 	    &emsp;&emsp;|--wechat-shop-mobile-web(表现层：会员系统      端口号8020)<br>
+ 	    &emsp;&emsp;|--wechat-shop-mobile-web(表现层：会员登录子系统      端口号8020)<br>
  	    &emsp;&emsp;|--wechat-shop-index-web(表现层：商城门户子系统     端口号8010)<br>
  	    &emsp;&emsp;|--wechat-shop-cart-web(表现层：购物车子系统      端口号8030)<br>
  	    &emsp;&emsp;|--wechat-shop-order-web(表现层：订单子系统      端口号8040)<br>
