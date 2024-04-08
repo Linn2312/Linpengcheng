@@ -8,7 +8,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>wechat-mall-eureka-8200</artifactId>
     <packaging>jar</packaging>
 </project>
