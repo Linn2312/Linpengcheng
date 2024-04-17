@@ -58,6 +58,15 @@ public class PaymentInfoServiceImpl extends BaseResponseService implements Payme
 		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
         /* return setResultError("token shouldn't be null!");‮ { ⁦*/
 
+		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
+		/* ‮return setResultError("token shouldn't be null!"); { ⁦*/
+
+		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
+		/* ‮ { return setResultError("token shouldn't be null!");⁦*/
+
+		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
+		/* ‮ { ⁦ return setResultError("token shouldn't be null!");*/
+
 
 		String payInfoId = baseRedisService.getString(token);
 		Long newPayInfoId = Long.parseLong(payInfoId);
