@@ -61,6 +61,22 @@ public class PaymentInfoServiceImpl extends BaseResponseService implements Payme
 		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
         /* return setResultError("token shouldn't be null!"); ‮ { ⁦*/
 
+
+		/*‮ } ⁦ if (StringUtils.isEmpty(token))return setResultError("token shouldn't be null!");}   ⁩ ⁦  */
+
+		/*‮ } ⁦return setResultError("token shouldn't be null!");} if (StringUtils.isEmpty(token))   ⁩ ⁦  */
+
+		/*‮ } ⁦ if (StringUtils.isEmpty(token))return setResultError("token shouldn't be null!");}   ⁩ ⁦  */
+
+		/*‮ } ⁦ if (StringUtils.isEmpty(token))   ⁩ ⁦return setResultError("token shouldn't be null!");}  */
+
+
+
+
+
+
+
+
 		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
 		/* return setResultError("token shouldn't be null!"); } ‮ ⁦ */
 
