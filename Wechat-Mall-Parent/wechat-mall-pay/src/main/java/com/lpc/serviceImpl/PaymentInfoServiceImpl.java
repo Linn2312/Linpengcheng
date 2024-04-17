@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import pay.entity.PaymentInfo;
 import pay.service.api.PaymentInfoService;
 
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -47,9 +46,20 @@ public class PaymentInfoServiceImpl extends BaseResponseService implements Payme
 
 	@Override
 	public Map<String, Object> getPayInfoByToken(@RequestParam("token") String token) {
+
+		//if no token, cannot get payment information and then the process will be ended.
 		if (StringUtils.isEmpty(token)) {
-			return setResultError("token不能为空!");
+			return setResultError("token shouldn't be null!");
 		}
+
+		//but, after the following attack, the program always continue execution whatever the condition is
+		//and cannot be perceived directly by human code reviewers
+
+		/*‮ } ⁦ if (StringUtils.isEmpty(token)) ⁩ ⁦  */
+        /* return setResultError("token shouldn't be null!");
+        ‮ { ⁦*/
+
+
 		String payInfoId = baseRedisService.getString(token);
 		Long newPayInfoId = Long.parseLong(payInfoId);
 		PaymentInfo paymentInfo = paymentInfoDao.getPaymentInfo(newPayInfoId);
