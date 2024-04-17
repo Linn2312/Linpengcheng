@@ -52,38 +52,12 @@ public class PaymentInfoServiceImpl extends BaseResponseService implements Payme
 			return setResultError("token shouldn't be null!");
 		}
 
-		/*‮ } ⁦if (isAdmin)⁩ ⁦  */
-		/* System.out.println("You are an admin."); ‮ { ⁦*/
-
 		//but, after the following attack, the program always continue execution whatever the condition is
 		//and cannot be perceived directly by human code reviewers
 
-		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
-        /* return setResultError("token shouldn't be null!"); ‮ { ⁦*/
-
-
-		/*‮  ⁦ if (StringUtils.isEmpty(token)) { return setResultError("token shouldn't be null!");}   ⁩ ⁦  */
-
-		/*‮ } ⁦return setResultError("token shouldn't be null!");} if (StringUtils.isEmpty(token))   ⁩ ⁦  */
-
-		/*‮ } ⁦ if (StringUtils.isEmpty(token))return setResultError("token shouldn't be null!");}   ⁩ ⁦  */
-
-
-
-
-
-
-
-
-
-		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
-		/* return setResultError("token shouldn't be null!"); } ‮ ⁦ */
-
-		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
-		/*  { return setResultError("token shouldn't be null!"); ‮ ⁦*/
-
-		/*‮ } ⁦ if (StringUtils.isEmpty(token))  ⁩ ⁦  */
-		/* ‮ { ⁦ return setResultError("token shouldn't be null!");*/
+		/*‮  ⁦ if (StringUtils.isEmpty(token)) {
+			return setResultError("token shouldn't be null!");
+		} ⁩ ⁦  */
 
 
 		String payInfoId = baseRedisService.getString(token);
