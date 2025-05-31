@@ -1,4 +1,4 @@
-# Linpengcheng
+# undergraduation_finalProject
 final graduation design--基于SpringCloud的微信商城系统的设计与实现
 
 本项目是基于Springcloud微服务解决方案的移动端H5工程项目。将工程拆分成服务层和表现层,每个服务层都拥有独立的数据库、独立的redis。<br><br>
